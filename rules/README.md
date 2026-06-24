@@ -8,7 +8,7 @@ Người học không cần tự ghi tên các file rule trong prompt. `AGENTS.m
 
 | Nhu cầu | File rule |
 | --- | --- |
-| Hỏi bài tập, giải từng bước, kiểm tra bài làm | `exercise-solving.md` |
+| Hỏi bài tập, giải từng bước, kiểm tra bài làm, hoặc viết lời giải hoàn chỉnh ngắn gọn khi được yêu cầu | `exercise-solving.md` |
 | Hỏi lý thuyết, công thức, bản chất | `theory-question.md` |
 | Bắt đầu học một chương | `chapter-start.md` |
 | Tổng hợp kiến thức thực hành theo bài tập | `exercise-practice-summary.md` |

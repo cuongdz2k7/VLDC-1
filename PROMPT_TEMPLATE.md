@@ -141,13 +141,14 @@ Context:
 Tôi đang học chương [tên chương] / đang làm bài trong file tổng hợp kiến thức thực hành / đang ôn đề PHY1095.
 
 Goal:
-Tôi muốn hiểu cách làm bài này. [Chỉ gợi ý / hướng dẫn từng bước / giải luôn / kiểm tra đáp án.]
+Tôi muốn hiểu cách làm bài này. [Chỉ gợi ý / hướng dẫn từng bước / giải hoàn chỉnh ngắn gọn như đi thi / kiểm tra đáp án.]
 
 Input:
 Tôi gửi ảnh hoặc nội dung bài số [số bài nếu có].
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
+[Nếu muốn: Viết lời giải hoàn chỉnh, thực dụng, đủ điểm, không dài dòng.]
 
 Update:
 [Không cập nhật file / Nếu tôi sai lỗi đáng nhớ, cập nhật `practice/MISTAKES.md`.]

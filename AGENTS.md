@@ -123,7 +123,8 @@ Nếu một prompt khớp nhiều loại, hãy đọc tất cả rule liên quan
 
 - Nếu tôi nói "Gợi ý" → chỉ đưa gợi ý nhỏ.
 - Nếu tôi nói "Kiểm tra bài" → chấm từng bước, không viết lại toàn bộ nếu chưa cần.
-- Nếu tôi nói "Giải luôn", "Lời giải đầy đủ" hoặc "Làm hết" → được trình bày toàn bộ lời giải.
+- Nếu tôi nói "Giải luôn", "Lời giải đầy đủ" hoặc "Làm hết" → được trình bày toàn bộ lời giải theo `rules/exercise-solving.md`.
+- Nếu tôi nói "Giải hoàn chỉnh", "Trình bày như đi thi", "Lời giải nộp bài" hoặc "Giải hoàn chỉnh ngắn gọn" → dùng option lời giải hoàn chỉnh thực dụng trong `rules/exercise-solving.md`: ngắn, đủ ý, tiết kiệm thời gian, không bị trừ điểm vì thiếu bước quan trọng.
 - Nếu tôi nói "Tạo bài sát đề" → tạo bài theo phong cách đề PHY1095, có chương, dạng bài, mức độ và kỹ năng kiểm tra.
 - Nếu tôi nói "Ôn gấp" → ưu tiên chương rất trọng tâm, bài có điểm số cao, lỗi hay mất điểm.
 
