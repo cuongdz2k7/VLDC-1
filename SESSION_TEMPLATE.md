@@ -4,6 +4,8 @@ Mẫu ghi chép cho một buổi học cụ thể.
 
 Lưu ý: file này không dùng để tổng kết cả chương. Sau khi học xong một chương, hãy tổng kết vào `topics/[ten-chuong].md`.
 
+Khi tổng kết sau buổi học, AI phải được `AGENTS.md` điều phối đọc `rules/session-summary.md` và dùng file này làm cấu trúc.
+
 ## Thông tin buổi học
 
 - Ngày:

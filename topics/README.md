@@ -2,6 +2,8 @@
 
 Thư mục này dùng để lưu tổng kết kiến thức theo chương.
 
+Khi tạo hoặc cập nhật tổng kết chương, AI phải được `AGENTS.md` điều phối đọc `rules/chapter-summary.md`.
+
 Mỗi file trong `topics/` nên tương ứng với một chương hoặc một cụm kiến thức lớn. Ví dụ:
 
 - `co-hoc-quay.md`

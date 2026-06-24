@@ -1,23 +1,19 @@
 # PROMPT_TEMPLATE.md
 
-File này chứa các mẫu prompt để làm việc hiệu quả với AI trong project ôn Vật lí đại cương 1.
+File này chứa mẫu prompt ngắn để làm việc với AI trong project ôn Vật lí đại cương 1.
 
 ## Nguyên tắc dùng prompt
 
-- `practice/AGENTS.md` là luật mặc định cho cách dạy, hỏi bài, kiểm tra bài và cập nhật project.
-- `practice/exercises/README.md` là luật mặc định khi tạo hoặc cập nhật file tổng hợp kiến thức thực hành theo bài tập.
-- `practice/topics/README.md` là luật mặc định khi tổng kết chương.
-- `practice/SESSION_TEMPLATE.md` là cấu trúc mặc định khi ghi một buổi học.
-- Prompt hiện tại chỉ cần nói mục tiêu cụ thể của lần này.
-- Không cần ghi `Task` hoặc `Output` nếu yêu cầu đã có workflow trong `AGENTS.md` hoặc README liên quan.
-- Chỉ ghi `Task` khi việc cần làm chưa rõ trong các rule nền.
+- Mọi prompt chỉ cần mở bằng `Tuân thủ practice/AGENTS.md`.
+- `AGENTS.md` là điểm vào duy nhất: AI tự nhận diện loại yêu cầu và đọc rule phù hợp trong `rules/`.
+- Không cần tự inject file rule thủ công.
+- Không cần ghi `Task` hoặc `Output` nếu yêu cầu đã có rule mặc định.
+- Chỉ ghi `Task` khi việc cần làm thật sự đặc biệt.
 - Chỉ ghi `Output` khi muốn format khác với mặc định.
 - Dùng `Custom` để đổi cách xử lý cho riêng lần đó.
-- Không được ghi đè các rule nền: tiếng Việt có dấu, UTF-8, không bịa nội dung ảnh/tài liệu, báo rõ nếu ảnh không đọc được, không xóa nội dung cũ nếu chưa yêu cầu.
+- Dùng `Update` để kiểm soát có được sửa file hay không.
 
 ## Khung prompt mặc định
-
-Dùng khung này cho hầu hết nhiệm vụ hằng ngày.
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -33,7 +29,6 @@ Input:
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
-[Nếu muốn đổi cách xử lý thì ghi ở đây.]
 
 Update:
 [Không cập nhật file / cập nhật file nào nếu cần.]
@@ -41,38 +36,16 @@ Update:
 
 ## Khi nào thêm Task hoặc Output?
 
-Chỉ thêm `Task` nếu việc cần làm chưa được mô tả trong `AGENTS.md` hoặc README liên quan.
+Chỉ thêm nếu muốn đổi khỏi rule mặc định.
 
 ```md
 Task:
 [Việc đặc biệt cần làm trong lần này.]
 ```
 
-Chỉ thêm `Output` nếu muốn format khác với rule mặc định.
-
 ```md
 Output:
 [Ví dụ: trả lời dạng bảng 3 cột / chỉ checklist / chỉ gợi ý ngắn.]
-```
-
-## Cách viết Custom khi cần
-
-`Custom` là nơi ghi ngoại lệ cho riêng lần đó.
-
-Ví dụ:
-
-```md
-Custom:
-- Giải luôn, không dừng từng bước.
-- Tập trung vào cách chọn chiều dương.
-- Không cập nhật file.
-```
-
-```md
-Custom:
-- Chỉ gợi ý, không giải hết.
-- Hỏi tôi trước khi sang bước tiếp theo.
-- Tập trung vào kiểm tra đơn vị.
 ```
 
 ## 1. Khởi động cuộc chat
@@ -138,15 +111,13 @@ Update:
 Không cập nhật file.
 ```
 
-Ghi chú: AI mặc định đọc `EXAM_CONTEXT.md`, `EXAM_PATTERNS.md`, `LEARNING_PLAN.md` nếu cần.
-
 ## 4. Tổng hợp kiến thức thực hành theo bài tập
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
 Context:
-Tôi đang học chương [tên chương]. Tôi muốn ôn theo trọng tâm đề thi PHY1095, ưu tiên bảng trọng tâm ôn tập và `EXAM_PATTERNS.md`.
+Tôi đang học chương [tên chương]. Tôi muốn ôn theo trọng tâm đề thi PHY1095.
 
 Goal:
 Tôi muốn biến các bài tập trong ảnh thành bản đồ kiến thức thực hành.
@@ -155,13 +126,11 @@ Input:
 Tôi gửi ảnh các bài tập trọng tâm của chương này.
 
 Custom:
-Mặc định làm theo `AGENTS.md` và `practice/exercises/README.md`.
+Mặc định làm theo `AGENTS.md`.
 
 Update:
-[Không cập nhật file / Nếu tôi yêu cầu, tạo hoặc cập nhật `practice/exercises/[ten-chuong]-priority.md`.]
+[Không cập nhật file / Tạo hoặc cập nhật `practice/exercises/[ten-chuong]-priority.md`.]
 ```
-
-Ghi chú: AI mặc định dùng cấu trúc trong `exercises/README.md`, gồm bảng bài tập, công thức bắt buộc, khung tư duy theo dạng bài, thứ tự làm, gợi ý ôn nhanh và lỗi dễ sai.
 
 ## 5. Hỏi một bài tập
 
@@ -179,13 +148,10 @@ Tôi gửi ảnh hoặc nội dung bài số [số bài nếu có].
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
-[Nếu muốn đổi: tập trung vào dấu / trình bày ngắn gọn / không cập nhật file.]
 
 Update:
 [Không cập nhật file / Nếu tôi sai lỗi đáng nhớ, cập nhật `practice/MISTAKES.md`.]
 ```
-
-Ghi chú: Không cần ghi `Task` hoặc `Output`. AI mặc định làm theo workflow bài tập trong `AGENTS.md`: phân loại, phân tích đề, đặt biến, nêu công thức, hướng dẫn từng bước, kiểm tra và tổng kết.
 
 ## 6. Hỏi lý thuyết trong chương
 
@@ -207,8 +173,6 @@ Mặc định làm theo `AGENTS.md`.
 Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
 ```
-
-Ghi chú: AI mặc định dùng chế độ lý thuyết trong `AGENTS.md`: bản chất, công thức, ý nghĩa đại lượng, điều kiện áp dụng, lỗi sai và câu hỏi kiểm tra.
 
 ## 7. Kiểm tra bài làm của tôi
 
@@ -268,7 +232,7 @@ Tóm tắt những bài đã làm, lỗi sai, phần chưa chắc và câu hỏi
 [dán nội dung]
 
 Custom:
-Mặc định làm theo `AGENTS.md` và `practice/topics/README.md`.
+Mặc định làm theo `AGENTS.md`.
 
 Update:
 Cập nhật hoặc tạo file `practice/topics/[ten-chuong].md`.
@@ -276,8 +240,6 @@ Nếu có lỗi quan trọng, cập nhật `practice/MISTAKES.md`.
 Nếu có công thức quan trọng, cập nhật `practice/FORMULAS.md`.
 Nếu còn câu hỏi chưa hiểu, cập nhật `practice/QUESTIONS.md`.
 ```
-
-Ghi chú: Không cần ghi `Output`; AI dùng cấu trúc trong `topics/README.md`.
 
 ## 10. Phân tích đề thi mới
 
@@ -295,9 +257,6 @@ Tôi gửi ảnh đề thi hoặc nội dung đề.
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo bảng: Câu, Chương, Dạng bài, Mức độ, Kỹ năng, Pattern liên quan, Lỗi dễ sai.
 
 Update:
 Cập nhật `practice/EXAM_ANALYSIS.md` và `practice/EXAM_PATTERNS.md` nếu có thông tin mới đáng lưu.
@@ -429,7 +388,7 @@ Input:
 Nội dung buổi học: [đã học gì, bài nào làm sai, phần nào chưa hiểu].
 
 Custom:
-Mặc định làm theo `AGENTS.md` và `practice/SESSION_TEMPLATE.md`.
+Mặc định làm theo `AGENTS.md`.
 
 Update:
 Cập nhật `practice/MISTAKES.md`, `practice/FORMULAS.md`, `practice/QUESTIONS.md`, `practice/LEARNING_PLAN.md` nếu cần.
@@ -458,8 +417,6 @@ Update:
 
 ## 18. Cập nhật rule hoặc cấu trúc project
 
-Dùng khi muốn chỉnh cách AI làm việc, đổi cấu trúc file, thêm workflow mới, hoặc sửa quy ước trong project.
-
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
@@ -472,14 +429,6 @@ Tôi muốn các cuộc trò chuyện AI sau này hiểu và làm theo quy ướ
 Input:
 Yêu cầu cập nhật của tôi:
 [ghi rõ bạn muốn đổi gì]
-
-Các file có thể cần sửa:
-- `practice/AGENTS.md`
-- `practice/PROMPT_TEMPLATE.md`
-- `practice/topics/README.md`
-- `practice/exercises/README.md`
-- `practice/SESSION_TEMPLATE.md`
-- file khác nếu thật sự liên quan
 
 Custom:
 - Không xóa rule cũ nếu vẫn còn đúng.
