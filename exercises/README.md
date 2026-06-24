@@ -1,8 +1,8 @@
 # exercises
 
-Thư mục này dùng để lưu bài tập luyện theo chương hoặc theo dạng.
+Thư mục này dùng để lưu tổng hợp kiến thức thực hành theo bài tập.
 
-Đặc biệt, các file `*-priority.md` dùng để lưu danh sách bài tập đã được lọc từ ảnh/tài liệu thầy gửi.
+Đặc biệt, các file `*-priority.md` là bản đồ học và làm bài của từng chương: ngoài việc chọn bài, cần gom kiến thức thực hành, mục đích luyện, công thức bắt buộc và khung tư duy theo dạng bài để người học tự follow khi giải.
 
 Ví dụ:
 
@@ -13,24 +13,25 @@ Ví dụ:
 
 Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERNS.md` chỉ lưu dạng bài tổng quát có khả năng ra thi.
 
-## Khi nào tạo file bài tập ưu tiên?
+## Khi nào tạo file tổng hợp kiến thức thực hành?
 
 - Khi người học gửi ảnh các bài tập trọng tâm của một chương.
 - Khi cần chọn bài nên làm trước để tiết kiệm thời gian.
 - Khi cần bỏ qua bài ít khả năng ra thi.
+- Khi cần rút công thức, cách nghĩ, cách trình bày và lỗi sai từ một nhóm bài tập.
 
 ## Cấu trúc chuẩn cho `exercises/[ten-chuong]-priority.md`
 
 ```md
-# Bài tập ưu tiên - [Tên chương]
+# [Tên chương] - tổng hợp kiến thức thực hành
 
-## Nguồn bài tập
+## Vai trò trong đề thi
 
-## Tiêu chí lọc
+## Mục tiêu học nhanh
 
-## Danh sách bài đã lọc
+## Bảng bài tập và mục đích luyện
 
-| Bài | Dạng bài | Mức độ | Khả năng ra thi | Ưu tiên | Lý do | Kiến thức cần trước khi làm |
+| Bài | Dạng bài | Mức độ | Khả năng ra thi | Ưu tiên | Mục đích luyện | Kiến thức cần trước khi làm |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Công thức cần nhớ bắt buộc
@@ -38,13 +39,23 @@ Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERN
 | Công thức | Ý nghĩa | Vì sao cần nhớ | Dùng cho bài |
 | --- | --- | --- | --- |
 
+## Khung tư duy theo dạng bài
+
+### Dạng 1: [Tên dạng]
+
+- Bài áp dụng:
+- Dấu hiệu nhận biết:
+- Mục tiêu:
+- Thought process:
+- Cách trình bày:
+- Công thức cần dùng:
+- Bẫy dễ sai:
+
 ## Thứ tự làm bài đề xuất
 
-## Bài bỏ qua hoặc làm nếu còn thời gian
+## Gợi ý ôn nhanh
 
-## Bài đã hoàn thành
-
-## Ghi chú sau khi làm
+## Lỗi dễ mất điểm
 ```
 
 ## Quy tắc ưu tiên bài tập
@@ -56,6 +67,18 @@ Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERN
 
 Khi bỏ qua bài, luôn ghi lý do để sau này kiểm tra lại.
 
+## Quy tắc ghi bảng bài tập và mục đích luyện
+
+- Mỗi bài phải gắn với một mục đích luyện rõ ràng, ví dụ: luyện đọc đồ thị, luyện chọn chiều dương, luyện tách trục \(x,y\).
+- `Ưu tiên` cho biết có nên làm bài đó không; `Mục đích luyện` cho biết vì sao bài đó đáng làm.
+- Bài ít khả năng ra thi vẫn có thể giữ lại nếu nó giúp sửa một lỗi nền quan trọng.
+
+## Quy tắc ghi thứ tự làm bài và gợi ý ôn nhanh
+
+- Trong `Thứ tự làm bài đề xuất`, mỗi bài nên có ghi chú ngắn trong ngoặc để nói vì sao làm bài đó hoặc bài đó luyện kiến thức gì.
+- Trong `Gợi ý ôn nhanh`, mỗi nhóm bài nên có ghi chú ngắn trong ngoặc để nói nhóm đó giúp nắm phần kiến thức nào.
+- Ghi chú phải ngắn, đủ để nhìn vào là biết bài đó dùng để luyện gì; không viết lời giải trong phần này.
+
 ## Quy tắc ghi công thức bắt buộc
 
 - Mỗi file `*-priority.md` phải có mục `Công thức cần nhớ bắt buộc`.
@@ -63,3 +86,11 @@ Khi bỏ qua bài, luôn ghi lý do để sau này kiểm tra lại.
 - Với mỗi công thức, ghi rõ vì sao cần nhớ và dùng cho bài nào.
 - Nếu công thức đã có trong `FORMULAS.md`, dùng đúng ký hiệu ở đó.
 - Nếu công thức quan trọng chưa có trong `FORMULAS.md`, chỉ đề xuất cập nhật `FORMULAS.md`; không tự sửa nếu người học chưa cho phép.
+
+## Quy tắc ghi khung tư duy theo dạng bài
+
+- Mỗi dạng bài chính nên có một khung tư duy riêng, không cần viết lời giải chi tiết cho từng bài.
+- `Thought process` là các câu hỏi tự hỏi khi gặp dạng bài, ví dụ: cần tìm gì, dữ kiện nào quyết định công thức, có phải chọn chiều dương không.
+- `Cách trình bày` là thứ tự viết lời giải sao cho dễ kiểm tra: chọn trục, ghi dữ kiện, viết công thức, thay số, kết luận, kiểm tra đơn vị và dấu.
+- Mỗi dạng phải gắn với bài áp dụng cụ thể trong bảng bài tập.
+- Nội dung cần ngắn gọn, phục vụ học nhanh và làm bài tương tự, không biến file thành lời giải đầy đủ.

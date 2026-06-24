@@ -55,6 +55,15 @@ Khi làm việc trong project này, hãy đọc và ưu tiên context theo thứ
 
 Nếu có PDF hoặc tài liệu thầy gửi, hãy ưu tiên công thức, ký hiệu và kỹ thuật giải trong tài liệu đó. Nếu tài liệu mâu thuẫn với cách nhớ chung, hãy báo rõ điểm khác biệt thay vì tự chọn im lặng.
 
+## Cách hiểu prompt
+
+- Nếu prompt không ghi `Task`, hãy suy ra việc cần làm từ `Goal`, `Input` và workflow trong `AGENTS.md`.
+- Nếu prompt không ghi `Output`, hãy trình bày theo cấu trúc mặc định trong `AGENTS.md` hoặc README liên quan.
+- Khi tạo/cập nhật file trong `exercises/`, đọc và làm theo `exercises/README.md`.
+- Khi tạo/cập nhật file trong `topics/`, đọc và làm theo `topics/README.md`.
+- Khi tổng kết một buổi học, dùng `SESSION_TEMPLATE.md` làm cấu trúc mặc định.
+- Chỉ xem `Custom` là ngoại lệ tạm thời cho lần đó; không biến `Custom` thành rule lâu dài nếu người học chưa yêu cầu cập nhật file rule.
+
 ## Cấu trúc project
 
 AI cần hiểu vai trò của từng file/thư mục trước khi cập nhật nội dung:
@@ -71,7 +80,7 @@ AI cần hiểu vai trò của từng file/thư mục trước khi cập nhật 
 - `QUESTIONS.md`: câu hỏi chưa hiểu hoặc cần hỏi lại.
 - `SESSION_TEMPLATE.md`: mẫu ghi một buổi học cụ thể, không dùng làm tổng kết cả chương.
 - `topics/`: tổng kết kiến thức theo chương sau khi học xong hoặc gần xong chương.
-- `exercises/`: danh sách bài tập đã lọc theo chương/dạng, thứ tự luyện và bài bỏ qua.
+- `exercises/`: tổng hợp kiến thức thực hành theo bài tập; gồm bài cần luyện, mục đích luyện, công thức bắt buộc, khung tư duy theo dạng bài, cách trình bày và lỗi dễ sai.
 - `materials/`: PDF, ảnh, slide, tài liệu thầy gửi.
 - `exams/`: đề cũ, đề thử, phân tích đề, kết quả làm đề.
 
@@ -80,7 +89,7 @@ AI cần hiểu vai trò của từng file/thư mục trước khi cập nhật 
 Khi tôi bắt đầu học một chương:
 
 1. Xác định chương đó thuộc nhóm nào trong `EXAM_CONTEXT.md` và `LEARNING_PLAN.md`.
-2. Nếu tôi gửi ảnh các bài tập trọng tâm, hãy đọc ảnh và lọc bài.
+2. Nếu tôi gửi ảnh các bài tập trọng tâm, hãy đọc ảnh, chọn bài cần luyện và tổng hợp kiến thức thực hành theo bài tập.
 3. Xếp bài theo thứ tự dễ đến khó và theo khả năng ra thi.
 4. Gắn nhãn từng bài: bắt buộc, nên làm, làm nếu còn thời gian, bỏ qua.
 5. Hạ ưu tiên hoặc bỏ qua bài ít liên quan đến trọng tâm đề thi, nhưng phải nêu lý do.
@@ -88,16 +97,18 @@ Khi tôi bắt đầu học một chương:
 7. Nếu tôi kết thúc chương, tổng kết vào `topics/[ten-chuong].md`.
 8. Nếu phát hiện lỗi/công thức/câu hỏi đáng nhớ, cập nhật `MISTAKES.md`, `FORMULAS.md`, `QUESTIONS.md`.
 
-## Quy tắc lưu bài tập đã lọc
+## Quy tắc tổng hợp kiến thức thực hành theo bài tập
 
 Khi tôi gửi ảnh bài tập trọng tâm của một chương và yêu cầu lưu lại:
 
-- Tạo hoặc cập nhật file `exercises/[ten-chuong]-priority.md`.
+- Tạo hoặc cập nhật file `exercises/[ten-chuong]-priority.md` như một bản đồ thực hành của chương, không chỉ là danh sách bài đã lọc.
 - Không ghi danh sách từng bài cụ thể vào `EXAM_PATTERNS.md`.
 - `EXAM_PATTERNS.md` chỉ ghi dạng bài tổng quát có khả năng ra thi.
-- Mỗi bài nên có: số bài, dạng bài, mức độ, khả năng ra thi, ưu tiên, lý do, kiến thức cần trước khi làm.
+- Mỗi bài nên có: số bài, dạng bài, mức độ, khả năng ra thi, ưu tiên, mục đích luyện, kiến thức cần trước khi làm.
 - File bài tập ưu tiên phải có thêm mục `Công thức cần nhớ bắt buộc`.
-- Với mỗi công thức bắt buộc, cần ghi: công thức, ý nghĩa ngắn gọn, vì sao cần nhớ, dùng để làm bài nào trong danh sách đã lọc.
+- Với mỗi công thức bắt buộc, cần ghi: công thức, ý nghĩa ngắn gọn, vì sao cần nhớ, dùng để làm bài nào trong bảng bài tập.
+- File bài tập ưu tiên phải có thêm mục `Khung tư duy theo dạng bài`.
+- Với mỗi dạng bài chính, cần ghi: bài áp dụng, dấu hiệu nhận biết, mục tiêu, thought process, cách trình bày, công thức cần dùng, bẫy dễ sai.
 - Nếu công thức đã có trong `FORMULAS.md`, dùng đúng ký hiệu ở đó và không chép lan man.
 - Nếu phát hiện công thức quan trọng chưa có trong `FORMULAS.md`, chỉ đề xuất cập nhật `FORMULAS.md`; chỉ sửa `FORMULAS.md` khi người học cho phép rõ.
 
@@ -197,6 +208,8 @@ Không hỏi kiểu học thuộc lòng.
 
 Mục tiêu là giúp tôi xây dựng phương pháp giải tổng quát, không chỉ giải xong bài hiện tại.
 
+Khi tôi gửi bài tập, `Task` trong prompt có thể bỏ trống hoặc ghi rất ngắn. Nếu không có yêu cầu riêng trong `Custom`, hãy tự xử lý theo workflow bài tập dưới đây.
+
 ## Chế độ mặc định
 
 Không giải toàn bộ ngay lập tức.
@@ -235,6 +248,10 @@ Dừng lại.
 - Tóm tắt đề.
 - Liệt kê dữ kiện.
 - Xác định đại lượng cần tìm.
+- Đặt biến rõ ràng trước khi dùng công thức:
+  - Nếu đặt biến mới như \(x_1, v_1, x_2, v_2, T_1, T_2\), phải giải thích biến đó là gì.
+  - Ghi biến đã biết, biến chưa biết, đại lượng trung gian cần tìm.
+  - Nếu cần, chọn trục, mốc tọa độ, chiều dương hoặc hệ quy chiếu trước khi đặt biến.
 - Chỉ ra dữ kiện ngầm nếu có.
 - Chỉ ra đơn vị cần đổi.
 - Chỉ ra bẫy đề nếu có.
@@ -249,6 +266,7 @@ Hỏi:
 - Vì sao chọn công cụ đó?
 - Có đại lượng trung gian nào cần tìm?
 - Có cần chọn chiều dương, hệ quy chiếu hoặc quy ước dấu không?
+- Mỗi ký hiệu trong công thức tương ứng với đại lượng nào trong bài?
 
 Nếu tôi chưa biết:
 
@@ -261,6 +279,7 @@ Dừng lại.
 - Chỉ giải một bước tại một thời điểm.
 - Giải thích tại sao cần bước đó.
 - Không nhảy bước.
+- Không nhảy thẳng vào thay số khi chưa xác định biến đã biết, biến cần tìm và ý nghĩa từng ký hiệu trong công thức.
 - Luôn giữ nhất quán chiều dương và dấu.
 - Khi có ròng rọc hoặc vật rắn quay, kiểm tra có cần phương trình mômen không.
 - Khi có đồ thị p-V, kiểm tra công là diện tích nào và dấu của công ra sao.
@@ -422,7 +441,7 @@ Sau khi học:
 - Cập nhật `LEARNING_PLAN.md` nếu cần.
 - Nếu phát hiện dạng bài mới giống đề thi, cập nhật `EXAM_PATTERNS.md`.
 - Nếu phân tích đề mới, cập nhật `EXAM_ANALYSIS.md`.
-- Khi tạo hoặc cập nhật file bài tập ưu tiên, kiểm tra có cần thêm mục công thức bắt buộc cho chương đó không.
+- Khi tạo hoặc cập nhật file bài tập ưu tiên, kiểm tra có cần thêm mục công thức bắt buộc và khung tư duy theo dạng bài cho chương đó không.
 
 Không tự ý xóa nội dung cũ nếu chưa được yêu cầu.
 

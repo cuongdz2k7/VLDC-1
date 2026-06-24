@@ -14,7 +14,7 @@ Lưu ý: file này không dùng để tổng kết cả chương. Sau khi học 
 ## Context trước buổi học
 
 - Chương này thuộc nhóm trọng tâm nào:
-- File bài tập ưu tiên liên quan:
+- File tổng hợp kiến thức thực hành liên quan:
 - File topic chương liên quan:
 
 ## Tôi đã biết
@@ -29,13 +29,13 @@ Lưu ý: file này không dùng để tổng kết cả chương. Sau khi học 
 
 -
 
-## Công thức bắt buộc từ danh sách bài ưu tiên
+## Công thức bắt buộc từ file tổng hợp kiến thức thực hành
 
 | Công thức | Vì sao cần nhớ | Dùng cho bài |
 | --- | --- | --- |
 | | | |
 
-## Bài tập đã chọn từ danh sách ưu tiên
+## Bài tập đã chọn từ file tổng hợp kiến thức thực hành
 
 | Bài | Dạng bài | Mức độ | Lý do chọn | Kết quả |
 | --- | --- | --- | --- | --- |

@@ -4,86 +4,68 @@ File này chứa các mẫu prompt để làm việc hiệu quả với AI trong
 
 ## Nguyên tắc dùng prompt
 
-- `practice/AGENTS.md` là luật mặc định.
-- Prompt hiện tại dùng để nói mục tiêu cụ thể của lần này.
-- Nếu prompt hiện tại yêu cầu cách làm khác `AGENTS.md`, AI được ưu tiên yêu cầu hiện tại cho riêng bài đó.
+- `practice/AGENTS.md` là luật mặc định cho cách dạy, hỏi bài, kiểm tra bài và cập nhật project.
+- `practice/exercises/README.md` là luật mặc định khi tạo hoặc cập nhật file tổng hợp kiến thức thực hành theo bài tập.
+- `practice/topics/README.md` là luật mặc định khi tổng kết chương.
+- `practice/SESSION_TEMPLATE.md` là cấu trúc mặc định khi ghi một buổi học.
+- Prompt hiện tại chỉ cần nói mục tiêu cụ thể của lần này.
+- Không cần ghi `Task` hoặc `Output` nếu yêu cầu đã có workflow trong `AGENTS.md` hoặc README liên quan.
+- Chỉ ghi `Task` khi việc cần làm chưa rõ trong các rule nền.
+- Chỉ ghi `Output` khi muốn format khác với mặc định.
+- Dùng `Custom` để đổi cách xử lý cho riêng lần đó.
 - Không được ghi đè các rule nền: tiếng Việt có dấu, UTF-8, không bịa nội dung ảnh/tài liệu, báo rõ nếu ảnh không đọc được, không xóa nội dung cũ nếu chưa yêu cầu.
 
-## Khung prompt chuẩn
+## Khung prompt mặc định
 
-Dùng khung này cho hầu hết nhiệm vụ.
-
-```md
-Tuân thủ `practice/AGENTS.md`.
-
-Context:
-[Tôi đang học chương/dạng bài nào? Có liên quan đề thi, PDF, file nào không?]
-
-Goal:
-[Tôi muốn hiểu bản chất, kiểm tra bài làm, giải luôn, tạo bài luyện, hay cập nhật file?]
-
-Input:
-[Tôi sẽ gửi ảnh/đề bài/lời giải/PDF/nội dung buổi học.]
-
-Task:
-[Việc AI cần làm trong lần này.]
-
-Custom:
-[Mặc định làm theo `AGENTS.md`. Chỉ ghi nếu muốn đổi cách xử lý cho riêng lần này.]
-
-Output:
-[Format mong muốn: bảng phân tích, từng bước, checklist, lỗi sai, bài tương tự...]
-
-Update:
-[Không cập nhật file / Cập nhật `MISTAKES.md` / `FORMULAS.md` / `QUESTIONS.md` / `EXAM_ANALYSIS.md` nếu cần.]
-```
-
-## Ví dụ khung chuẩn
+Dùng khung này cho hầu hết nhiệm vụ hằng ngày.
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
 Context:
-Tôi đang ôn đề PHY1095, ưu tiên các dạng trong `EXAM_PATTERNS.md`.
+[Tôi đang học gì / đang làm gì.]
 
 Goal:
-Tôi muốn hiểu cách làm bài trong ảnh, chưa cần lời giải đầy đủ.
+[Mục tiêu lần này.]
 
 Input:
-Tôi gửi ảnh đề bài.
-
-Task:
-Đọc đề, chép lại đề, phân loại chương/dạng/mức độ, nêu hướng làm.
+[Tôi gửi ảnh/bài/lời giải/tài liệu nếu có.]
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo các mục: Đề hiểu được, Phân loại, Công thức, Hướng làm, Bẫy dễ sai.
+[Nếu muốn đổi cách xử lý thì ghi ở đây.]
 
 Update:
-Chưa cập nhật file.
+[Không cập nhật file / cập nhật file nào nếu cần.]
 ```
 
-## Khi nào có thể bỏ bớt mục
+## Khi nào thêm Task hoặc Output?
 
-- Nếu đang vội, có thể bỏ `Custom` hoặc `Output`.
-- Nếu không có yêu cầu riêng, ghi `Custom: Mặc định làm theo AGENTS.md`.
-- Nếu không muốn AI sửa file, hãy ghi rõ ở `Update`: `Không cập nhật file`.
-- Nếu muốn AI sửa file, luôn ghi rõ file được phép sửa.
-- Nếu gửi ảnh, nên giữ `Input` và nói rõ đó là ảnh đề, ảnh lời giải hay ảnh tài liệu.
+Chỉ thêm `Task` nếu việc cần làm chưa được mô tả trong `AGENTS.md` hoặc README liên quan.
+
+```md
+Task:
+[Việc đặc biệt cần làm trong lần này.]
+```
+
+Chỉ thêm `Output` nếu muốn format khác với rule mặc định.
+
+```md
+Output:
+[Ví dụ: trả lời dạng bảng 3 cột / chỉ checklist / chỉ gợi ý ngắn.]
+```
 
 ## Cách viết Custom khi cần
 
-`Custom` chỉ dùng khi bạn muốn đổi cách xử lý mặc định cho riêng lần đó.
+`Custom` là nơi ghi ngoại lệ cho riêng lần đó.
 
-Ví dụ custom ngắn:
+Ví dụ:
 
 ```md
 Custom:
 - Giải luôn, không dừng từng bước.
 - Tập trung vào cách chọn chiều dương.
-- Sau lời giải, tạo 2 bài tương tự.
+- Không cập nhật file.
 ```
 
 ```md
@@ -91,12 +73,6 @@ Custom:
 - Chỉ gợi ý, không giải hết.
 - Hỏi tôi trước khi sang bước tiếp theo.
 - Tập trung vào kiểm tra đơn vị.
-```
-
-```md
-Custom:
-- Không cập nhật file trong lần này.
-- Chỉ cho nhận xét ngắn gọn.
 ```
 
 ## 1. Khởi động cuộc chat
@@ -113,20 +89,14 @@ Dùng project `practice/` làm context học tập và ôn thi PHY1095.
 Input:
 Các file context trong `practice/`.
 
-Task:
-Đọc các file cần thiết trước khi trả lời, đặc biệt `PROFILE.md`, `EXAM_CONTEXT.md`, `EXAM_ANALYSIS.md`, `EXAM_PATTERNS.md`, `FORMULAS.md`.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời ngắn gọn bằng tiếng Việt.
 
 Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
 ```
 
-## 2. Giải thích cấu trúc project cho AI ở chat mới
+## 2. Hiểu cấu trúc project
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -140,18 +110,8 @@ Tôi muốn bạn hiểu cấu trúc project trước khi hỗ trợ tôi.
 Input:
 Các file trong `practice/`.
 
-Task:
-Đọc `AGENTS.md`, `PROFILE.md`, `EXAM_CONTEXT.md`, `EXAM_PATTERNS.md`, `PROMPT_TEMPLATE.md` và tóm tắt ngắn cách project này hoạt động.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Tóm tắt ngắn:
-- File nào dùng để làm gì
-- Khi nào cập nhật file nào
-- Workflow học một chương
-- Workflow làm bài tập
 
 Update:
 Không cập nhật file.
@@ -171,26 +131,16 @@ Tôi muốn biết chương này quan trọng thế nào trong đề thi và nê
 Input:
 Tên chương: [tên chương]. Nếu có tài liệu/ảnh bài tập, tôi sẽ gửi sau.
 
-Task:
-Đọc `EXAM_CONTEXT.md`, `EXAM_PATTERNS.md`, `LEARNING_PLAN.md` và xác định vai trò của chương này trong đề thi.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo các mục:
-- Vai trò trong đề thi
-- Mức độ ưu tiên
-- Kiến thức cần học trước
-- Dạng bài hay ra
-- Lỗi sai thường gặp
-- Cách học chương này
 
 Update:
 Không cập nhật file.
 ```
 
-## 4. Lọc bài tập trọng tâm theo chương
+Ghi chú: AI mặc định đọc `EXAM_CONTEXT.md`, `EXAM_PATTERNS.md`, `LEARNING_PLAN.md` nếu cần.
+
+## 4. Tổng hợp kiến thức thực hành theo bài tập
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -199,70 +149,43 @@ Context:
 Tôi đang học chương [tên chương]. Tôi muốn ôn theo trọng tâm đề thi PHY1095, ưu tiên bảng trọng tâm ôn tập và `EXAM_PATTERNS.md`.
 
 Goal:
-Tôi muốn bạn lọc các bài tập trong ảnh, chọn bài nên làm từ dễ đến khó, bỏ các bài ít khả năng ra thi để tiết kiệm thời gian.
+Tôi muốn biến các bài tập trong ảnh thành bản đồ kiến thức thực hành.
 
 Input:
 Tôi gửi ảnh các bài tập trọng tâm của chương này.
 
-Task:
-Đọc danh sách bài tập trong ảnh, phân loại từng bài theo dạng, mức độ, khả năng ra thi và mức độ ưu tiên.
-
 Custom:
-Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo bảng:
-- Mã/số bài
-- Dạng bài
-- Mức độ: dễ, trung bình, khó
-- Khả năng ra thi: cao, vừa, thấp
-- Ưu tiên làm: bắt buộc, nên làm, làm nếu còn thời gian, bỏ qua
-- Lý do
-- Kiến thức cần trước khi làm
-
-Sau bảng, hãy đề xuất:
-- Thứ tự làm bài từ dễ đến khó.
-- Công thức cần nhớ bắt buộc: ghi công thức, vì sao cần nhớ, dùng để làm bài nào.
+Mặc định làm theo `AGENTS.md` và `practice/exercises/README.md`.
 
 Update:
-Nếu tôi yêu cầu, tạo/cập nhật file `practice/exercises/[ten-chuong]-priority.md`, gồm cả mục công thức cần nhớ bắt buộc.
+[Không cập nhật file / Nếu tôi yêu cầu, tạo hoặc cập nhật `practice/exercises/[ten-chuong]-priority.md`.]
 ```
 
-## 5. Hỏi một bài tập
+Ghi chú: AI mặc định dùng cấu trúc trong `exercises/README.md`, gồm bảng bài tập, công thức bắt buộc, khung tư duy theo dạng bài, thứ tự làm, gợi ý ôn nhanh và lỗi dễ sai.
 
-Dùng prompt này cho bài lẻ, bài trong chương, bài từ danh sách đã lọc, ảnh đề/bài tập, hoặc khi muốn gợi ý/hướng dẫn từng bước/giải luôn.
+## 5. Hỏi một bài tập
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
 Context:
-Tôi đang học chương [tên chương] / đang làm bài trong danh sách đã lọc / đang ôn đề PHY1095.
+Tôi đang học chương [tên chương] / đang làm bài trong file tổng hợp kiến thức thực hành / đang ôn đề PHY1095.
 
 Goal:
-Tôi muốn hiểu cách làm bài này. [Chọn một: chỉ gợi ý / hướng dẫn từng bước / giải luôn / kiểm tra đáp án.]
+Tôi muốn hiểu cách làm bài này. [Chỉ gợi ý / hướng dẫn từng bước / giải luôn / kiểm tra đáp án.]
 
 Input:
 Tôi gửi ảnh hoặc nội dung bài số [số bài nếu có].
 
-Task:
-Đọc đề, chép lại đề theo cách hiểu của bạn, phân loại chương/dạng/mức độ, nêu công thức cần dùng và hướng xử lý.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-Nếu muốn đổi: [giải luôn / chỉ gợi ý / tập trung vào dấu / hỏi tôi từng bước / không cập nhật file].
-
-Output:
-Trả lời theo các mục:
-- Đề hiểu được
-- Phân loại
-- Công thức cần dùng
-- Hướng làm hoặc lời giải
-- Bẫy dễ sai
-- Bài tương tự nếu cần
+[Nếu muốn đổi: tập trung vào dấu / trình bày ngắn gọn / không cập nhật file.]
 
 Update:
 [Không cập nhật file / Nếu tôi sai lỗi đáng nhớ, cập nhật `practice/MISTAKES.md`.]
 ```
+
+Ghi chú: Không cần ghi `Task` hoặc `Output`. AI mặc định làm theo workflow bài tập trong `AGENTS.md`: phân loại, phân tích đề, đặt biến, nêu công thức, hướng dẫn từng bước, kiểm tra và tổng kết.
 
 ## 6. Hỏi lý thuyết trong chương
 
@@ -278,18 +201,14 @@ Tôi muốn hiểu [khái niệm] và biết dùng trong bài tập/đề thi.
 Input:
 Câu hỏi của tôi: [ghi câu hỏi].
 
-Task:
-Giải thích khái niệm theo chế độ lý thuyết trong `AGENTS.md`.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo các mục: Bản chất, Công thức, Ý nghĩa đại lượng, Điều kiện áp dụng, Lỗi sai, Ví dụ.
 
 Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
 ```
+
+Ghi chú: AI mặc định dùng chế độ lý thuyết trong `AGENTS.md`: bản chất, công thức, ý nghĩa đại lượng, điều kiện áp dụng, lỗi sai và câu hỏi kiểm tra.
 
 ## 7. Kiểm tra bài làm của tôi
 
@@ -300,19 +219,13 @@ Context:
 Tôi đã tự làm một bài và muốn kiểm tra lời giải.
 
 Goal:
-Tôi muốn biết mình đúng sai ở đâu, chưa cần cập nhật file học tập.
+Tôi muốn biết mình đúng sai ở đâu.
 
 Input:
 Tôi gửi đề bài và lời giải của tôi.
 
-Task:
-Chấm từng bước, chỉ ra bước đúng, bước sai, bước thiếu chặt chẽ và cách sửa.
-
 Custom:
 Không viết lại toàn bộ lời giải nếu chưa cần. Ưu tiên giúp tôi tự sửa.
-
-Output:
-Trả lời theo các mục: Nhận xét chung, Bước đúng, Bước sai, Cách sửa, Lỗi đáng nhớ.
 
 Update:
 Không cập nhật file.
@@ -332,14 +245,8 @@ Tôi muốn kiểm tra bài và cập nhật hồ sơ học tập nếu cần.
 Input:
 Tôi gửi đề bài và lời giải của tôi.
 
-Task:
-Chấm từng bước, chỉ ra lỗi sai, nguyên nhân, cách sửa và xác định nội dung cần lưu lại.
-
 Custom:
 Chỉ cập nhật lỗi hoặc công thức thật sự đáng nhớ, tránh ghi quá nhiều lỗi nhỏ.
-
-Output:
-Trả lời theo các mục: Chấm bài, Lỗi sai, Cách sửa, Nội dung đã cập nhật.
 
 Update:
 Cập nhật `practice/MISTAKES.md`, `practice/FORMULAS.md`, `practice/QUESTIONS.md` nếu cần.
@@ -360,22 +267,8 @@ Input:
 Tóm tắt những bài đã làm, lỗi sai, phần chưa chắc và câu hỏi còn mở:
 [dán nội dung]
 
-Task:
-Tổng kết chương này thành ghi chú ôn thi.
-
 Custom:
-Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo các mục:
-- Kiến thức cốt lõi
-- Công thức cần nhớ
-- Điều kiện áp dụng
-- Dạng bài hay ra
-- Quy trình giải chung
-- Lỗi sai thường gặp
-- Bài đại diện nên xem lại
-- Câu hỏi còn mở
+Mặc định làm theo `AGENTS.md` và `practice/topics/README.md`.
 
 Update:
 Cập nhật hoặc tạo file `practice/topics/[ten-chuong].md`.
@@ -383,6 +276,8 @@ Nếu có lỗi quan trọng, cập nhật `practice/MISTAKES.md`.
 Nếu có công thức quan trọng, cập nhật `practice/FORMULAS.md`.
 Nếu còn câu hỏi chưa hiểu, cập nhật `practice/QUESTIONS.md`.
 ```
+
+Ghi chú: Không cần ghi `Output`; AI dùng cấu trúc trong `topics/README.md`.
 
 ## 10. Phân tích đề thi mới
 
@@ -397,9 +292,6 @@ Tôi muốn biết đề này củng cố hoặc thay đổi trọng tâm ôn th
 
 Input:
 Tôi gửi ảnh đề thi hoặc nội dung đề.
-
-Task:
-Đọc đề, phân tích từng câu theo chương/dạng/mức độ, so sánh với đề mẫu đã có và xác định pattern mới nếu có.
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
@@ -425,14 +317,8 @@ Tôi muốn luyện bài sát phong cách đề.
 Input:
 Số lượng bài cần tạo: [số lượng]. Chủ đề ưu tiên: [chủ đề nếu có].
 
-Task:
-Tạo bài tập sát đề dựa trên `EXAM_CONTEXT.md`, `EXAM_ANALYSIS.md`, `EXAM_PATTERNS.md`, `FORMULAS.md` và tài liệu trong `materials/` nếu có.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Mỗi bài gồm: Chương, Dạng bài, Mức độ, Kỹ năng kiểm tra, Đề bài, Gợi ý, Lỗi sai thường gặp.
 
 Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
@@ -451,9 +337,6 @@ Tạo một đề mô phỏng 90 phút sát phong cách đề đã phân tích.
 
 Input:
 Các context trong `practice/`, đặc biệt `EXAM_CONTEXT.md`, `EXAM_ANALYSIS.md`, `EXAM_PATTERNS.md`.
-
-Task:
-Tạo đề gồm cơ học 6 điểm và nhiệt học 4 điểm, bám theo bảng trọng tâm ôn tập.
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
@@ -479,9 +362,6 @@ Tôi muốn được chấm điểm và biết cần ôn lại gì.
 Input:
 Tôi gửi lời giải của tôi.
 
-Task:
-Chấm theo thang điểm, chỉ ra điểm mất, phân loại lỗi và đề xuất phần cần ôn lại.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
 
@@ -506,14 +386,8 @@ Tôi muốn rút công thức, kỹ thuật giải và dạng bài quan trọng 
 Input:
 Tài liệu trong `practice/materials/`: [tên file].
 
-Task:
-Đọc tài liệu, tóm tắt phần liên quan đến đề thi, trích công thức/kỹ thuật quan trọng và so sánh với context hiện có.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo các mục: Nội dung chính, Công thức, Kỹ thuật giải, Dạng bài liên quan, Cần cập nhật.
 
 Update:
 Cập nhật `practice/FORMULAS.md`, `practice/EXAM_PATTERNS.md`, `practice/LEARNING_PLAN.md` nếu cần.
@@ -533,14 +407,8 @@ Tôi muốn có kế hoạch ôn gấp theo thứ tự ưu tiên.
 Input:
 Thời gian còn lại: [số giờ/số ngày]. Điểm yếu hiện tại: [nếu có].
 
-Task:
-Lập kế hoạch ôn gấp dựa trên `PROFILE.md`, `EXAM_CONTEXT.md`, `EXAM_ANALYSIS.md`, `EXAM_PATTERNS.md`, `MISTAKES.md`, `LEARNING_PLAN.md`.
-
 Custom:
 Mặc định làm theo `AGENTS.md`.
-
-Output:
-Checklist theo thời gian, chương bắt buộc học, chương ôn qua, công thức cần nhớ, dạng bài cần luyện.
 
 Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
@@ -560,14 +428,8 @@ Tôi muốn tổng kết và cập nhật hồ sơ học tập.
 Input:
 Nội dung buổi học: [đã học gì, bài nào làm sai, phần nào chưa hiểu].
 
-Task:
-Tóm tắt buổi học, rút lỗi sai, công thức, câu hỏi còn mở và việc cần làm tiếp.
-
 Custom:
-Mặc định làm theo `AGENTS.md`.
-
-Output:
-Trả lời theo các mục: Tóm tắt, Lỗi sai, Công thức, Câu hỏi mở, Việc tiếp theo, File đã cập nhật.
+Mặc định làm theo `AGENTS.md` và `practice/SESSION_TEMPLATE.md`.
 
 Update:
 Cập nhật `practice/MISTAKES.md`, `practice/FORMULAS.md`, `practice/QUESTIONS.md`, `practice/LEARNING_PLAN.md` nếu cần.
@@ -579,22 +441,16 @@ Cập nhật `practice/MISTAKES.md`, `practice/FORMULAS.md`, `practice/QUESTIONS
 Tuân thủ `practice/AGENTS.md`.
 
 Context:
-Tôi đang học/ôn Vật lí đại cương 1.
+[Tôi đang học/ôn gì.]
 
 Goal:
 [Mục tiêu lần này.]
 
 Input:
-[Tôi gửi ảnh/bài/lời giải/câu hỏi.]
-
-Task:
-[Việc cần làm.]
+[Tôi gửi ảnh/bài/lời giải/câu hỏi nếu có.]
 
 Custom:
-[Mặc định làm theo `AGENTS.md`; ghi yêu cầu riêng nếu có.]
-
-Output:
-[Format mong muốn nếu có.]
+Mặc định làm theo `AGENTS.md`.
 
 Update:
 [Không cập nhật file / cập nhật file nào nếu cần.]
@@ -602,7 +458,7 @@ Update:
 
 ## 18. Cập nhật rule hoặc cấu trúc project
 
-Dùng khi bạn muốn chỉnh cách AI làm việc, đổi cấu trúc file, thêm workflow mới, hoặc sửa quy ước trong project.
+Dùng khi muốn chỉnh cách AI làm việc, đổi cấu trúc file, thêm workflow mới, hoặc sửa quy ước trong project.
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -625,21 +481,11 @@ Các file có thể cần sửa:
 - `practice/SESSION_TEMPLATE.md`
 - file khác nếu thật sự liên quan
 
-Task:
-Đọc các file liên quan trước, sau đó đề xuất cách merge thay đổi vào project. Nếu yêu cầu đã rõ, hãy cập nhật file trực tiếp.
-
 Custom:
 - Không xóa rule cũ nếu vẫn còn đúng.
 - Không làm trùng lặp nội dung đã có.
 - Nếu có hai rule giống nhau, hãy gộp lại thành một rule rõ hơn.
 - Giữ văn phong tiếng Việt ngắn gọn, dễ dùng.
-
-Output:
-Trả lời theo các mục:
-- File đã sửa
-- Nội dung đã thêm/sửa
-- Quy ước mới sau khi cập nhật
-- Cách tôi nên dùng từ nay
 
 Update:
 Cập nhật các file rule/template/README liên quan. Không sửa file học tập như `MISTAKES.md`, `FORMULAS.md`, `QUESTIONS.md` trừ khi tôi yêu cầu rõ.
