@@ -96,6 +96,10 @@ Khi tôi gửi ảnh bài tập trọng tâm của một chương và yêu cầu
 - Không ghi danh sách từng bài cụ thể vào `EXAM_PATTERNS.md`.
 - `EXAM_PATTERNS.md` chỉ ghi dạng bài tổng quát có khả năng ra thi.
 - Mỗi bài nên có: số bài, dạng bài, mức độ, khả năng ra thi, ưu tiên, lý do, kiến thức cần trước khi làm.
+- File bài tập ưu tiên phải có thêm mục `Công thức cần nhớ bắt buộc`.
+- Với mỗi công thức bắt buộc, cần ghi: công thức, ý nghĩa ngắn gọn, vì sao cần nhớ, dùng để làm bài nào trong danh sách đã lọc.
+- Nếu công thức đã có trong `FORMULAS.md`, dùng đúng ký hiệu ở đó và không chép lan man.
+- Nếu phát hiện công thức quan trọng chưa có trong `FORMULAS.md`, chỉ đề xuất cập nhật `FORMULAS.md`; chỉ sửa `FORMULAS.md` khi người học cho phép rõ.
 
 ## Quy tắc tổng kết chương
 
@@ -418,6 +422,7 @@ Sau khi học:
 - Cập nhật `LEARNING_PLAN.md` nếu cần.
 - Nếu phát hiện dạng bài mới giống đề thi, cập nhật `EXAM_PATTERNS.md`.
 - Nếu phân tích đề mới, cập nhật `EXAM_ANALYSIS.md`.
+- Khi tạo hoặc cập nhật file bài tập ưu tiên, kiểm tra có cần thêm mục công thức bắt buộc cho chương đó không.
 
 Không tự ý xóa nội dung cũ nếu chưa được yêu cầu.
 

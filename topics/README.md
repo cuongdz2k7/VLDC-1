@@ -30,6 +30,8 @@ Không dùng `topics/` để lưu danh sách từng bài tập cụ thể. Danh 
 
 ## Công thức cần nhớ
 
+## Công thức bắt buộc liên kết với bài tập ưu tiên
+
 ## Điều kiện áp dụng
 
 ## Dạng bài hay ra
@@ -48,5 +50,6 @@ Không dùng `topics/` để lưu danh sách từng bài tập cụ thể. Danh 
 - Viết ngắn gọn, phục vụ ôn thi nhanh.
 - Ưu tiên kiến thức có trong `EXAM_CONTEXT.md` và `EXAM_PATTERNS.md`.
 - Nếu có công thức dùng lại nhiều lần, đồng thời cập nhật `FORMULAS.md`.
+- Nếu chương đã có `exercises/[ten-chuong]-priority.md`, kiểm tra mục công thức bắt buộc trong file đó để đưa các công thức thật sự quan trọng vào topic.
 - Nếu có lỗi sai cá nhân quan trọng, đồng thời cập nhật `MISTAKES.md`.
 - Nếu còn câu hỏi chưa hiểu, đồng thời cập nhật `QUESTIONS.md`.

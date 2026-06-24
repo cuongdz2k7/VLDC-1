@@ -30,8 +30,13 @@ Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERN
 
 ## Danh sách bài đã lọc
 
-| Bài | Dạng bài | Mức độ | Khả năng ra thi | Ưu tiên | Lý do |
-| --- | --- | --- | --- | --- | --- |
+| Bài | Dạng bài | Mức độ | Khả năng ra thi | Ưu tiên | Lý do | Kiến thức cần trước khi làm |
+| --- | --- | --- | --- | --- | --- | --- |
+
+## Công thức cần nhớ bắt buộc
+
+| Công thức | Ý nghĩa | Vì sao cần nhớ | Dùng cho bài |
+| --- | --- | --- | --- |
 
 ## Thứ tự làm bài đề xuất
 
@@ -50,3 +55,11 @@ Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERN
 - `Bỏ qua`: bài quá xa trọng tâm, quá mẹo, hoặc ít khả năng xuất hiện trong đề.
 
 Khi bỏ qua bài, luôn ghi lý do để sau này kiểm tra lại.
+
+## Quy tắc ghi công thức bắt buộc
+
+- Mỗi file `*-priority.md` phải có mục `Công thức cần nhớ bắt buộc`.
+- Chỉ ghi công thức thật sự cần để làm các bài đã chọn, tránh biến file bài tập thành bảng công thức dài.
+- Với mỗi công thức, ghi rõ vì sao cần nhớ và dùng cho bài nào.
+- Nếu công thức đã có trong `FORMULAS.md`, dùng đúng ký hiệu ở đó.
+- Nếu công thức quan trọng chưa có trong `FORMULAS.md`, chỉ đề xuất cập nhật `FORMULAS.md`; không tự sửa nếu người học chưa cho phép.

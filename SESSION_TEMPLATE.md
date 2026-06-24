@@ -29,6 +29,12 @@ Lưu ý: file này không dùng để tổng kết cả chương. Sau khi học 
 
 -
 
+## Công thức bắt buộc từ danh sách bài ưu tiên
+
+| Công thức | Vì sao cần nhớ | Dùng cho bài |
+| --- | --- | --- |
+| | | |
+
 ## Bài tập đã chọn từ danh sách ưu tiên
 
 | Bài | Dạng bài | Mức độ | Lý do chọn | Kết quả |

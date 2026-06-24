@@ -220,10 +220,12 @@ Trả lời theo bảng:
 - Lý do
 - Kiến thức cần trước khi làm
 
-Sau bảng, hãy đề xuất thứ tự làm bài từ dễ đến khó.
+Sau bảng, hãy đề xuất:
+- Thứ tự làm bài từ dễ đến khó.
+- Công thức cần nhớ bắt buộc: ghi công thức, vì sao cần nhớ, dùng để làm bài nào.
 
 Update:
-Nếu tôi yêu cầu, tạo/cập nhật file `practice/exercises/[ten-chuong]-priority.md`.
+Nếu tôi yêu cầu, tạo/cập nhật file `practice/exercises/[ten-chuong]-priority.md`, gồm cả mục công thức cần nhớ bắt buộc.
 ```
 
 ## 5. Hỏi một bài tập
@@ -596,4 +598,49 @@ Output:
 
 Update:
 [Không cập nhật file / cập nhật file nào nếu cần.]
+```
+
+## 18. Cập nhật rule hoặc cấu trúc project
+
+Dùng khi bạn muốn chỉnh cách AI làm việc, đổi cấu trúc file, thêm workflow mới, hoặc sửa quy ước trong project.
+
+```md
+Tuân thủ `practice/AGENTS.md`.
+
+Context:
+Tôi muốn cập nhật rule/cấu trúc project `practice/` theo cách làm mới của tôi.
+
+Goal:
+Tôi muốn các cuộc trò chuyện AI sau này hiểu và làm theo quy ước mới này.
+
+Input:
+Yêu cầu cập nhật của tôi:
+[ghi rõ bạn muốn đổi gì]
+
+Các file có thể cần sửa:
+- `practice/AGENTS.md`
+- `practice/PROMPT_TEMPLATE.md`
+- `practice/topics/README.md`
+- `practice/exercises/README.md`
+- `practice/SESSION_TEMPLATE.md`
+- file khác nếu thật sự liên quan
+
+Task:
+Đọc các file liên quan trước, sau đó đề xuất cách merge thay đổi vào project. Nếu yêu cầu đã rõ, hãy cập nhật file trực tiếp.
+
+Custom:
+- Không xóa rule cũ nếu vẫn còn đúng.
+- Không làm trùng lặp nội dung đã có.
+- Nếu có hai rule giống nhau, hãy gộp lại thành một rule rõ hơn.
+- Giữ văn phong tiếng Việt ngắn gọn, dễ dùng.
+
+Output:
+Trả lời theo các mục:
+- File đã sửa
+- Nội dung đã thêm/sửa
+- Quy ước mới sau khi cập nhật
+- Cách tôi nên dùng từ nay
+
+Update:
+Cập nhật các file rule/template/README liên quan. Không sửa file học tập như `MISTAKES.md`, `FORMULAS.md`, `QUESTIONS.md` trừ khi tôi yêu cầu rõ.
 ```
