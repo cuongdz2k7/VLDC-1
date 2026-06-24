@@ -45,6 +45,7 @@ Mục tiêu là viết lời giải có thể dùng khi thi: ngắn, đủ ý, t
 - Ưu tiên dòng công thức sạch, ít chữ, đủ điều kiện áp dụng.
 - Nếu bài có dấu dễ sai, phải ghi chiều dương hoặc quy ước dấu.
 - Nếu đặt biến trung gian, đặt một lần rồi dùng lại.
+- Không làm tròn trung gian; kết luận theo mục `Quy tắc tính toán và làm tròn` trong `AGENTS.md`.
 
 ### Khung mẫu
 
@@ -108,6 +109,7 @@ Dừng lại.
 - Giải thích tại sao cần bước đó.
 - Không nhảy bước.
 - Không nhảy thẳng vào thay số khi chưa xác định biến đã biết, biến cần tìm và ý nghĩa từng ký hiệu trong công thức.
+- Khi tính toán, tuân thủ mục `Quy tắc tính toán và làm tròn` trong `AGENTS.md`.
 - Luôn giữ nhất quán chiều dương và dấu.
 - Khi có ròng rọc hoặc vật rắn quay, kiểm tra có cần phương trình mômen không.
 - Khi có đồ thị \(p-V\), kiểm tra công là diện tích nào và dấu của công ra sao.
@@ -120,6 +122,7 @@ Dừng lại sau mỗi bước.
 - Kiểm tra dấu.
 - Kiểm tra độ lớn có hợp lí không.
 - Kiểm tra điều kiện áp dụng công thức.
+- Kiểm tra cách làm tròn theo mục `Quy tắc tính toán và làm tròn` trong `AGENTS.md`.
 - Chỉ ra lỗi dễ mắc.
 
 ## Bước 6: Tổng kết sau khi xong bài
