@@ -426,6 +426,8 @@ Update:
 
 Dùng khi muốn AI đề xuất sửa rule, template, README hoặc tổ chức lại cấu trúc project. Prompt này không dùng để sửa nội dung học tập như công thức, lỗi sai hoặc câu hỏi cá nhân.
 
+AI sẽ tự xuất Implement Plan theo `rules/project-update.md`, kể cả khi đang ở Plan mode. Không cần ghi `Output` nếu chỉ muốn dùng cấu trúc plan mặc định.
+
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
@@ -444,16 +446,6 @@ Custom:
 - Không làm trùng lặp nội dung đã có.
 - Nếu có hai rule giống nhau, hãy gộp lại thành một rule rõ hơn.
 - Giữ văn phong tiếng Việt ngắn gọn, dễ dùng.
-
-Output:
-Trả lời bằng Implement Plan, gồm:
-- Mục tiêu thay đổi
-- File dự kiến sửa
-- Lý do cần sửa từng file
-- Nội dung dự kiến sửa ở từng file
-- Quy ước mới sau khi sửa
-- Phạm vi không sửa
-- Cách kiểm tra sau khi sửa
 
 Update:
 Chưa cập nhật file ở lượt đầu. Chỉ cập nhật sau khi tôi duyệt Implement Plan.

@@ -92,6 +92,7 @@ Nếu có PDF hoặc tài liệu thầy gửi, hãy ưu tiên công thức, ký 
 - Nếu prompt không ghi `Output`, hãy trình bày theo cấu trúc mặc định trong rule đã chọn hoặc README liên quan.
 - `Custom` là ngoại lệ tạm thời cho lần đó; không biến `Custom` thành rule lâu dài nếu người học chưa yêu cầu cập nhật file rule.
 - `Update` quyết định có được sửa file hay không. Nếu ghi không cập nhật file thì chỉ trả lời, không sửa.
+- Với yêu cầu cập nhật rule, template, README hoặc cấu trúc project, luôn đọc `rules/project-update.md` và tự xuất Implement Plan theo cấu trúc bắt buộc trong file đó trước khi sửa, kể cả khi môi trường đang ở Plan mode.
 
 ## Cách chọn rule theo prompt
 
@@ -110,6 +111,8 @@ Sau khi đọc prompt, AI phải tự chọn và đọc file rule tương ứng 
 | Cập nhật rule/cấu trúc project | muốn sửa quy ước, template, README, tổ chức project | `rules/project-update.md` |
 
 Nếu một prompt khớp nhiều loại, hãy đọc tất cả rule liên quan nhưng ưu tiên mục tiêu chính trong `Goal`.
+
+Riêng loại cập nhật rule/cấu trúc project, Plan mode chỉ quyết định việc chưa được sửa file; format kế hoạch vẫn phải theo `rules/project-update.md`.
 
 ## Cấu trúc project
 

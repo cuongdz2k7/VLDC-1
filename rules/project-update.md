@@ -18,14 +18,22 @@ Dùng khi người học muốn sửa quy ước, template, README hoặc tổ c
 12. Nếu thấy `$$...$$` nằm giữa câu, trong bảng hoặc trong bullet ngắn, đổi về `$...$`.
 13. Không tự quét toàn repo nếu người học chỉ yêu cầu sửa một file nhỏ, trừ khi người học yêu cầu "quét lại các file" hoặc yêu cầu áp dụng toàn project.
 
+## Plan mode và Implement Plan
+
+- Nếu môi trường đang ở Plan mode, AI vẫn phải đọc và tuân thủ cấu trúc Implement Plan trong file này.
+- Không thay thế Implement Plan bằng checklist ngắn hoặc format mặc định của Plan mode.
+- Công cụ `update_plan` nếu có chỉ dùng để theo dõi tiến độ nội bộ; không thay thế phần trả lời Implement Plan cho người học.
+- Người học không cần ghi lại mục `Output` trong prompt cập nhật rule/cấu trúc project; AI phải tự dùng cấu trúc bắt buộc bên dưới.
+- Nếu người học nói "lập plan", "đề xuất cách sửa", "cập nhật rule", "sửa template" hoặc ý tương tự, mặc định trả lời bằng Implement Plan trước.
+
 ## Cấu trúc Implement Plan bắt buộc
 
 Khi xuất Implement Plan, cần ghi rõ:
 
 - Mục tiêu thay đổi: AI hiểu người học muốn đổi gì.
-- File dự kiến sửa: file nào sẽ sửa và vì sao cần sửa file đó.
-- Nội dung dự kiến sửa: sửa mục nào, thêm gì, gộp gì, bỏ gì nếu có.
-- Lý do thiết kế: tại sao chọn cách sửa đó và cách tránh trùng lặp.
+- File dự kiến sửa: liệt kê từng file sẽ sửa.
+- Lý do cần sửa từng file: giải thích vì sao cần sửa file đó, không gộp chung mơ hồ.
+- Nội dung dự kiến sửa ở từng file: sửa mục nào, thêm gì, gộp gì, bỏ gì nếu có.
 - Quy ước mới sau khi sửa: hành vi AI hoặc cấu trúc project sẽ thay đổi như thế nào.
 - Phạm vi không sửa: file nào không được đụng, đặc biệt `MISTAKES.md`, `FORMULAS.md`, `QUESTIONS.md`.
 - Cách kiểm tra sau khi sửa: kiểm tra rule, template, định dạng LaTeX, UTF-8 và các ràng buộc liên quan.
