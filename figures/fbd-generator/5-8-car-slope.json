@@ -1,0 +1,17 @@
+{
+  "title": "Bài 5.8 - FBD xe trên mặt phẳng nghiêng",
+  "subtitle": "Cáp tạo góc 31° so với mặt dốc; mặt phẳng rất trơn nên không có ma sát.",
+  "description": "Free body diagram for a car held by a cable on a frictionless incline.",
+  "canvas": {
+    "width": 1100,
+    "height": 720
+  },
+  "slopeAngleDeg": 25,
+  "cableAngleDeg": 31,
+  "body": {
+    "cx": 535,
+    "cy": 375,
+    "width": 190,
+    "height": 82
+  }
+}

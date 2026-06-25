@@ -149,9 +149,10 @@ Tôi gửi ảnh hoặc nội dung bài số [số bài nếu có].
 Custom:
 Mặc định làm theo `AGENTS.md`.
 [Nếu muốn: Viết lời giải hoàn chỉnh, thực dụng, đủ điểm, không dài dòng.]
+[Nếu muốn vẽ lực: FBD: không vẽ / nháp / đẹp.]
 
 Update:
-[Không cập nhật file / Nếu tôi sai lỗi đáng nhớ, cập nhật `practice/MISTAKES.md`.]
+[Không cập nhật file / Nếu FBD đẹp thì tạo hình trong `practice/figures/` / Nếu tôi sai lỗi đáng nhớ, cập nhật `practice/MISTAKES.md`.]
 ```
 
 ## 6. Hỏi lý thuyết trong chương
@@ -417,6 +418,7 @@ Input:
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
+[Nếu là bài động lực học và muốn vẽ lực: FBD: không vẽ / nháp / đẹp.]
 
 Update:
 [Không cập nhật file / cập nhật file nào nếu cần.]

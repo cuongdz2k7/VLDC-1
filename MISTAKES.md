@@ -8,6 +8,19 @@ File này ghi các lỗi sai cần tránh khi học và làm đề.
 - Đổi chiều chuyển động nhưng không đổi dấu lực.
 - Nhầm điều kiện quay nhanh dần và chậm dần.
 
+## 2026-06-25 - Chương 2 động lực học
+
+- Bài thuộc chương: Động lực học, hệ vật tiếp xúc trên mặt ngang không ma sát.
+- Lỗi sai: Nhầm "hệ vật được xét" với "hệ quy chiếu" khi phân tích bài hai vật A và B tiếp xúc nhau.
+- Vì sao sai: Hệ vật là phần vật mình chọn để viết định luật II Newton, ví dụ xét riêng B hoặc xét cả hệ A+B. Hệ quy chiếu là nơi quan sát chuyển động, ví dụ mặt đất hoặc thang máy.
+- Cách sửa: Khi làm bài Newton, trước tiên hỏi "mình đang xét vật nào hoặc hệ vật nào?", sau đó mới vẽ lực ngoài tác dụng lên hệ đó.
+- Dấu hiệu để lần sau tránh lỗi: Nếu đang nói "xét riêng B" hay "xét hệ A+B", đó là chọn hệ vật, không phải đổi hệ quy chiếu.
+
+- Lỗi sai: Tưởng lực A tác dụng lên B bị triệt tiêu khi xét hệ A+B thì lực đó không còn làm B chuyển động.
+- Vì sao sai: Lực $F_{AB}$ và $F_{BA}$ chỉ triệt tiêu trong tổng lực của toàn hệ A+B vì chúng là nội lực. Khi xét riêng B, $F_{AB}$ là ngoại lực tác dụng lên B và là lực làm B gia tốc.
+- Cách sửa: Dùng quy trình: xét cả hệ A+B để tìm gia tốc chung $a$, rồi xét riêng B để tìm lực tiếp xúc $F_{AB}=m_Ba$.
+- Dấu hiệu để lần sau tránh lỗi: Nếu đề hỏi lực giữa hai vật, phải tách riêng vật chịu lực đó; nội lực của hệ lớn sẽ trở thành ngoại lực của vật nhỏ được tách ra.
+
 ## 2026-06-25 - Tuần 1 động học
 
 - Bài thuộc chương: Động học, chuyển động nhiều giai đoạn và ném xiên.
