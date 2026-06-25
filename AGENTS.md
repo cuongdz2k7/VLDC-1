@@ -27,10 +27,19 @@ Sau đó AI phải tự xác định loại yêu cầu và đọc thêm file rul
 - Luôn trả lời bằng tiếng Việt có dấu, mã hóa UTF-8.
 - Sử dụng thuật ngữ Vật lí chuẩn.
 - Trình bày công thức bằng LaTeX khi cần.
+- Trong file Markdown, dùng `$...$` cho ký hiệu hoặc công thức ngắn nằm trong câu, bảng hoặc bullet.
+- Dùng `$$...$$` cho công thức dài, phương trình chính hoặc chuỗi biến đổi cần đứng riêng dòng.
+- Không dùng inline math dạng ngoặc tròn backslash khi tạo hoặc sửa file Markdown vì renderer hiện tại không hiển thị đúng.
 - Không viết quá dài nếu câu hỏi đơn giản.
 - Ưu tiên trực giác vật lí trước, công thức sau.
 - Trình bày rõ ràng, có cấu trúc.
 - Tránh văn phong hoa mỹ hoặc giải thích dài dòng không cần thiết.
+
+## Thứ tự ưu tiên rule
+
+- `AGENTS.md` là rule cao nhất trong project.
+- Nếu `AGENTS.md` mâu thuẫn với `rules/`, README, template hoặc file context khác, luôn ưu tiên `AGENTS.md`.
+- Các file trong `rules/` và README chỉ bổ sung workflow cụ thể, không được ghi đè rule trong `AGENTS.md`.
 
 ## Quy tắc tính toán và làm tròn
 
@@ -38,12 +47,15 @@ Sau đó AI phải tự xác định loại yêu cầu và đọc thêm file rul
 - Không đổi sang số thập phân sớm nếu kết quả đó còn dùng cho bước sau.
 - Nếu phải dùng số thập phân trung gian, giữ đủ nhiều chữ số để sai số không ảnh hưởng kết quả cuối.
 - Không làm tròn ở bước trung gian.
+- Nếu một đại lượng trung gian như $t$, $v$, $a$, $D$ còn được dùng để tính tiếp, phải giữ ít nhất 4 đến 6 chữ số có nghĩa hoặc dùng trực tiếp biểu thức chưa làm tròn.
+- Nếu trong lời giải có ghi giá trị xấp xỉ ngắn để dễ đọc, khi thay vào bước sau phải nói rõ đang dùng giá trị chưa làm tròn.
+- Không được dùng giá trị đã làm tròn thô như $t\approx 3{,}20\,s$ để nhân tiếp nếu việc đó làm lệch kết quả cuối; phải dùng $t\approx 3{,}2134\,s$ hoặc biểu thức chính xác hơn.
 - Kết quả cuối nên ghi dạng chính xác nếu gọn, kèm xấp xỉ nếu cần.
 - Với số xấu, ghi xấp xỉ tốt trước rồi mới làm tròn kết luận.
 - Nếu đề không yêu cầu khác, kết luận thường dùng 3 chữ số có nghĩa hoặc 2 chữ số sau dấu phẩy, nhưng phải theo độ chính xác của dữ kiện đề.
-- Không làm tròn sai hướng: ví dụ \(5{,}5858\) phải làm tròn thành \(5{,}59\), không phải \(5{,}58\).
-- Ví dụ tốt: \(v=-\sqrt{1072}\,m/s\approx -32{,}74\,m/s\).
-- Ví dụ tốt: \(t=\dfrac{-\sqrt{1072}-22{,}0}{-9{,}80}\approx 5{,}5858\,s\approx 5{,}59\,s\).
+- Không làm tròn sai hướng: ví dụ $5{,}5858$ phải làm tròn thành $5{,}59$, không phải $5{,}58$.
+- Ví dụ tốt: $v=-\sqrt{1072}\,m/s\approx -32{,}74\,m/s$.
+- Ví dụ tốt: $t=\dfrac{-\sqrt{1072}-22{,}0}{-9{,}80}\approx 5{,}5858\,s\approx 5{,}59\,s$.
 
 ## Vai trò
 

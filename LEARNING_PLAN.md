@@ -52,6 +52,14 @@
 
 ## Kế hoạch ôn gợi ý
 
+### Buổi 0: Động học nền
+
+- `[x]` Ôn chuyển động thẳng gia tốc không đổi.
+- `[x]` Luyện chia giai đoạn tăng tốc, chuyển động đều, giảm tốc.
+- `[x]` Luyện ném xiên cơ bản và ném xiên có vật đích chuyển động.
+- `[~]` Cần ôn lại cách lập dàn ý trung gian: phương $y$ tìm $t$, phương $x$ tìm đại lượng ngang.
+- `[~]` Cần chú ý giữ nhiều chữ số ở đại lượng trung gian, không làm tròn sớm.
+
 ### Buổi 1: Newton + chuyển động tròn
 
 - Ôn định luật II Newton.

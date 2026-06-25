@@ -71,7 +71,7 @@ Khi bỏ qua bài, luôn ghi lý do để sau này kiểm tra lại.
 
 ## Quy tắc ghi bảng bài tập và mục đích luyện
 
-- Mỗi bài phải gắn với một mục đích luyện rõ ràng, ví dụ: luyện đọc đồ thị, luyện chọn chiều dương, luyện tách trục \(x,y\).
+- Mỗi bài phải gắn với một mục đích luyện rõ ràng, ví dụ: luyện đọc đồ thị, luyện chọn chiều dương, luyện tách trục $x,y$.
 - `Ưu tiên` cho biết có nên làm bài đó không; `Mục đích luyện` cho biết vì sao bài đó đáng làm.
 - Bài ít khả năng ra thi vẫn có thể giữ lại nếu nó giúp sửa một lỗi nền quan trọng.
 

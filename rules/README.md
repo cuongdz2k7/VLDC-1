@@ -21,6 +21,7 @@ Người học không cần tự ghi tên các file rule trong prompt. `AGENTS.m
 ## Nguyên tắc chung
 
 - Rule trong thư mục này bổ sung cho `AGENTS.md`, không thay thế `AGENTS.md`.
-- Nếu rule chuyên biệt mâu thuẫn với `AGENTS.md`, ưu tiên `AGENTS.md`.
+- `AGENTS.md` là rule cao nhất trong project.
+- Nếu rule chuyên biệt, README, template hoặc file context khác mâu thuẫn với `AGENTS.md`, luôn ưu tiên `AGENTS.md`.
 - Nếu prompt có `Custom`, áp dụng `Custom` cho lần đó nhưng không biến thành rule lâu dài nếu chưa được yêu cầu cập nhật file.
 - Nếu prompt có `Update: Không cập nhật file`, chỉ trả lời và không sửa file.

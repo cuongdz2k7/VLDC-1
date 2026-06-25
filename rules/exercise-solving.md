@@ -79,7 +79,7 @@ Dừng lại.
 - Tóm tắt đề theo cách hiểu.
 - Chọn trục, mốc tọa độ, chiều dương hoặc hệ quy chiếu nếu cần.
 - Đặt biến rõ ràng trước khi dùng công thức.
-- Nếu đặt biến mới như \(x_1, v_1, x_2, v_2, T_1, T_2\), phải giải thích biến đó là gì.
+- Nếu đặt biến mới như $x_1, v_1, x_2, v_2, T_1, T_2$, phải giải thích biến đó là gì.
 - Liệt kê dữ kiện đã biết.
 - Xác định đại lượng cần tìm.
 - Ghi đại lượng trung gian cần tìm nếu có.
@@ -110,9 +110,11 @@ Dừng lại.
 - Không nhảy bước.
 - Không nhảy thẳng vào thay số khi chưa xác định biến đã biết, biến cần tìm và ý nghĩa từng ký hiệu trong công thức.
 - Khi tính toán, tuân thủ mục `Quy tắc tính toán và làm tròn` trong `AGENTS.md`.
+- Nếu tính ra đại lượng trung gian còn dùng tiếp, giữ 4 đến 6 chữ số có nghĩa hoặc giữ biểu thức chính xác; không dùng số đã làm tròn thô để thay vào bước sau.
+- Nếu viết xấp xỉ ngắn cho dễ nhìn, bước tính tiếp phải dùng giá trị chưa làm tròn và ghi rõ nếu cần.
 - Luôn giữ nhất quán chiều dương và dấu.
 - Khi có ròng rọc hoặc vật rắn quay, kiểm tra có cần phương trình mômen không.
-- Khi có đồ thị \(p-V\), kiểm tra công là diện tích nào và dấu của công ra sao.
+- Khi có đồ thị $p-V$, kiểm tra công là diện tích nào và dấu của công ra sao.
 
 Dừng lại sau mỗi bước.
 

@@ -217,29 +217,33 @@ Update:
 Cập nhật `practice/MISTAKES.md`, `practice/FORMULAS.md`, `practice/QUESTIONS.md` nếu cần.
 ```
 
-## 9. Kết thúc học một chương
+## 9. Kết thúc học một chương và tạo topic
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
 Context:
-Tôi vừa học xong chương [tên chương] và đã làm các bài tập cần thiết.
+Tôi vừa học xong hoặc gần xong chương [tên chương].
 
 Goal:
-Tôi muốn đúc kết kiến thức cần nhớ của chương này để sau ôn thi nhanh.
+Tôi muốn cô đọng kiến thức chương này vào `topics/[ten-chuong].md` để sau ôn thi nhanh.
 
 Input:
-Tóm tắt những bài đã làm, lỗi sai, phần chưa chắc và câu hỏi còn mở:
-[dán nội dung]
+File thực hành cần đọc:
+- `practice/exercises/[ten-chuong]-priority.md`
+
+Tóm tắt thêm nếu có:
+[bài đã làm, lỗi sai, phần chưa chắc, câu hỏi còn mở]
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
 
 Update:
-Cập nhật hoặc tạo file `practice/topics/[ten-chuong].md`.
+Cập nhật hoặc tạo `practice/topics/[ten-chuong].md`.
+Nếu có công thức quan trọng dùng lại nhiều lần, cập nhật `practice/FORMULAS.md`.
 Nếu có lỗi quan trọng, cập nhật `practice/MISTAKES.md`.
-Nếu có công thức quan trọng, cập nhật `practice/FORMULAS.md`.
 Nếu còn câu hỏi chưa hiểu, cập nhật `practice/QUESTIONS.md`.
+Nếu ảnh hưởng thứ tự ôn tập, cập nhật `practice/LEARNING_PLAN.md`.
 ```
 
 ## 10. Phân tích đề thi mới
@@ -376,6 +380,8 @@ Không cập nhật file nếu tôi chưa yêu cầu.
 
 ## 16. Tổng kết sau buổi học
 
+Prompt này dùng để tổng kết một buổi học cụ thể. Không tạo topic chương trừ khi tôi nói rõ đã kết thúc chương hoặc yêu cầu cập nhật `topics/[ten-chuong].md`.
+
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
@@ -418,6 +424,8 @@ Update:
 
 ## 18. Cập nhật rule hoặc cấu trúc project
 
+Dùng khi muốn AI đề xuất sửa rule, template, README hoặc tổ chức lại cấu trúc project. Prompt này không dùng để sửa nội dung học tập như công thức, lỗi sai hoặc câu hỏi cá nhân.
+
 ```md
 Tuân thủ `practice/AGENTS.md`.
 
@@ -437,6 +445,24 @@ Custom:
 - Nếu có hai rule giống nhau, hãy gộp lại thành một rule rõ hơn.
 - Giữ văn phong tiếng Việt ngắn gọn, dễ dùng.
 
+Output:
+Trả lời bằng Implement Plan, gồm:
+- Mục tiêu thay đổi
+- File dự kiến sửa
+- Lý do cần sửa từng file
+- Nội dung dự kiến sửa ở từng file
+- Quy ước mới sau khi sửa
+- Phạm vi không sửa
+- Cách kiểm tra sau khi sửa
+
 Update:
-Cập nhật các file rule/template/README liên quan. Không sửa file học tập như `MISTAKES.md`, `FORMULAS.md`, `QUESTIONS.md` trừ khi tôi yêu cầu rõ.
+Chưa cập nhật file ở lượt đầu. Chỉ cập nhật sau khi tôi duyệt Implement Plan.
+Không sửa file học tập như `MISTAKES.md`, `FORMULAS.md`, `QUESTIONS.md` trừ khi tôi yêu cầu rõ.
+```
+
+Sau khi đã duyệt plan, dùng prompt triển khai:
+
+```md
+PLEASE IMPLEMENT THIS PLAN:
+[dán Implement Plan đã duyệt]
 ```

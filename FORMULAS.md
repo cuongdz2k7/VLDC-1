@@ -2,6 +2,32 @@
 
 File này ghi công thức quan trọng cần nhớ khi ôn thi.
 
+## Động học cơ bản
+
+- Vận tốc trung bình theo độ dời: $v_{tb} = \frac{\Delta x}{\Delta t}$.
+- Gia tốc là tốc độ biến thiên của vận tốc: $a = \frac{dv}{dt}$.
+- Chuyển động thẳng gia tốc không đổi:
+  - $v = v_0 + at$.
+  - $\Delta x = v_0t + \frac{1}{2}at^2$.
+  - $v^2 = v_0^2 + 2a\Delta x$.
+- Đồ thị $x-t$: độ dốc của đồ thị là vận tốc.
+- Rơi tự do hoặc ném thẳng đứng: nếu chọn chiều dương lên trên thì $a_y=-g$.
+
+## Ném xiên
+
+- Tách vận tốc đầu:
+  - $v_{0x}=v_0\cos\theta$.
+  - $v_{0y}=v_0\sin\theta$.
+- Nếu bỏ qua lực cản không khí:
+  - $x=x_0+v_{0x}t$.
+  - $y=y_0+v_{0y}t-\frac{1}{2}gt^2$ nếu chọn chiều dương lên trên.
+- Với vật đích chuyển động theo phương ngang, viết phương trình vị trí của cả vật ném và vật đích rồi đặt điều kiện gặp nhau: $x_{\text{vật}}=x_{\text{đích}}$.
+
+## Chuyển động tương đối
+
+- Vận tốc tương đối: $\vec v_{A/C}=\vec v_{A/B}+\vec v_{B/C}$.
+- Khi dùng phương trình $x=x_0+vt$, vận tốc $v$ phải mang dấu theo chiều dương đã chọn.
+
 ## Chuyển động quay quanh trục cố định
 
 - Vận tốc góc: $\omega = \frac{d\theta}{dt}$.
