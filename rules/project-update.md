@@ -13,10 +13,11 @@ Dùng khi người học muốn sửa quy ước, template, README hoặc tổ c
 7. Giữ văn phong tiếng Việt ngắn gọn, thực dụng, dễ sử dụng.
 8. Ưu tiên chỉnh sửa tối thiểu để đạt mục tiêu.
 9. Giữ tính nhất quán giữa các file.
-10. Khi cập nhật Markdown, kiểm tra các file liên quan có dùng sai định dạng LaTeX không.
-11. Nếu thấy công thức dạng ngoặc tròn backslash, đổi sang `$...$` nếu là công thức ngắn hoặc `$$...$$` nếu là công thức cần đứng riêng dòng.
-12. Nếu thấy `$$...$$` nằm giữa câu, trong bảng hoặc trong bullet ngắn, đổi về `$...$`.
-13. Không tự quét toàn repo nếu người học chỉ yêu cầu sửa một file nhỏ, trừ khi người học yêu cầu "quét lại các file" hoặc yêu cầu áp dụng toàn project.
+10. Khi tạo hoặc sửa file Markdown, kiểm tra các file liên quan có dùng sai định dạng LaTeX không.
+11. Trong file Markdown, nếu thấy công thức dạng ngoặc tròn backslash, đổi sang `$...$` nếu là công thức ngắn hoặc `$$...$$` nếu là công thức cần đứng riêng dòng.
+12. Trong file Markdown, nếu thấy `$$...$$` nằm giữa câu, trong bảng hoặc trong bullet ngắn, đổi về `$...$`.
+13. Rule LaTeX cho Markdown không áp dụng cho câu trả lời chat bình thường; trong chat có thể dùng `\(...\)` cho công thức inline.
+14. Không tự quét toàn repo nếu người học chỉ yêu cầu sửa một file nhỏ, trừ khi người học yêu cầu "quét lại các file" hoặc yêu cầu áp dụng toàn project.
 
 ## Plan mode và Implement Plan
 

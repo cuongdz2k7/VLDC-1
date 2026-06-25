@@ -27,9 +27,12 @@ Sau đó AI phải tự xác định loại yêu cầu và đọc thêm file rul
 - Luôn trả lời bằng tiếng Việt có dấu, mã hóa UTF-8.
 - Sử dụng thuật ngữ Vật lí chuẩn.
 - Trình bày công thức bằng LaTeX khi cần.
-- Trong file Markdown, dùng `$...$` cho ký hiệu hoặc công thức ngắn nằm trong câu, bảng hoặc bullet.
-- Dùng `$$...$$` cho công thức dài, phương trình chính hoặc chuỗi biến đổi cần đứng riêng dòng.
-- Không dùng inline math dạng ngoặc tròn backslash khi tạo hoặc sửa file Markdown vì renderer hiện tại không hiển thị đúng.
+- Trong câu trả lời chat bình thường, dùng `\(...\)` cho ký hiệu hoặc công thức inline để dễ đọc trong khung chat.
+- Trong câu trả lời chat bình thường, dùng `$$...$$` cho công thức dài, phương trình chính hoặc chuỗi biến đổi cần đứng riêng dòng.
+- Khi tạo hoặc sửa file Markdown, dùng `$...$` cho ký hiệu hoặc công thức ngắn nằm trong câu, bảng hoặc bullet.
+- Khi tạo hoặc sửa file Markdown, dùng `$$...$$` cho công thức dài, phương trình chính hoặc chuỗi biến đổi cần đứng riêng dòng.
+- Không dùng inline math dạng ngoặc tròn backslash trong file Markdown vì renderer Markdown hiện tại không hiển thị đúng.
+- Nếu đang viết nội dung để lưu vào file `.md`, phải theo rule Markdown, không theo rule chat.
 - Không viết quá dài nếu câu hỏi đơn giản.
 - Ưu tiên trực giác vật lí trước, công thức sau.
 - Trình bày rõ ràng, có cấu trúc.
