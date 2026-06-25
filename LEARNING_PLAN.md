@@ -15,8 +15,8 @@
 
 ### Nhóm 1: Cơ học bài tập 4 điểm
 
-- `[ ]` Newton + phân tích lực.
-- `[ ]` Chuyển động tròn.
+- `[~]` Newton + phân tích lực.
+- `[~]` Chuyển động tròn.
 - `[ ]` Công - động năng - thế năng.
 - `[ ]` Động lượng - xung lượng - va chạm.
 - `[ ]` Vật rắn quay: mômen lực, mômen quán tính, năng lượng quay.
@@ -62,10 +62,12 @@
 
 ### Buổi 1: Newton + chuyển động tròn
 
-- Ôn định luật II Newton.
-- Luyện phân tích lực và chọn chiều dương.
-- Ôn gia tốc hướng tâm, lực hướng tâm.
-- Làm bài cơ bản và trung bình.
+- `[~]` Ôn định luật II Newton.
+- `[~]` Luyện phân tích lực và chọn chiều dương.
+- `[~]` Ôn gia tốc hướng tâm, lực hướng tâm.
+- `[~]` Làm bài cơ bản và trung bình.
+- `[~]` Cần xem lại cách xét cả hệ/tách riêng vật để tìm lực nội.
+- `[~]` Cần luyện thêm phân biệt ma sát nghỉ và ma sát trượt trong chuyển động tròn.
 
 ### Buổi 2: Công - năng lượng
 

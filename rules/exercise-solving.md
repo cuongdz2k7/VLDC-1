@@ -83,14 +83,19 @@ Mục tiêu là viết lời giải có thể dùng khi thi: ngắn, đủ ý, t
 
 ### Khung mẫu
 
-```md
 Chọn ... làm chiều dương, gốc tại ...
+
 Ta có: ...
+
 Áp dụng ...
+
 Suy ra ...
+
 Thay số ...
+
 Vậy ...
-```
+
+Khi trả lời trong chat, viết mẫu trình bày trực tiếp như trên, không bọc trong code block Markdown. Chỉ dùng code block nếu đang tạo nội dung file hoặc người học yêu cầu rõ.
 
 ## Bước 1: Phân loại bài toán
 
@@ -102,9 +107,7 @@ Vậy ...
 
 Sau đó hỏi:
 
-```md
 Tôi có nhận ra dạng bài này không?
-```
 
 Dừng lại.
 

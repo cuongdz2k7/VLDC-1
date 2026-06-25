@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bài 5.90 - FBD hai vật trên hai mặt phẳng nghiêng</title>
+  <desc id="desc">Giản đồ lực cho hai khối nối bằng dây qua ròng rọc nhẹ không ma sát trên hai mặt phẳng nghiêng trơn.</desc>
+  <defs>
+    <marker id="arrow-red" markerWidth="7" markerHeight="7" refX="6.2" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="7" markerHeight="7" refX="6.2" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="7" markerHeight="7" refX="6.2" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#15803d"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="7" markerHeight="7" refX="6.2" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#374151"/>
+    </marker>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .panel { fill: #ffffff; stroke: #ddd6ce; stroke-width: 2; rx: 16; }
+      .title { font: 700 30px Arial, sans-serif; fill: #111827; }
+      .subtitle { font: 500 17px Arial, sans-serif; fill: #4b5563; }
+      .label { font: 600 18px Arial, sans-serif; fill: #374151; }
+      .small { font: 500 15px Arial, sans-serif; fill: #4b5563; }
+      .formula { font: italic 700 17px Georgia, serif; fill: #111827; }
+      .slope { stroke: #8b7d70; stroke-width: 6; stroke-linecap: round; }
+      .slope-fill { fill: #e7e5e4; stroke: none; }
+      .block1 { fill: #f59e0b; stroke: #92400e; stroke-width: 3; }
+      .block2 { fill: #fb923c; stroke: #9a3412; stroke-width: 3; }
+      .pulley { fill: #d6d3d1; stroke: #57534e; stroke-width: 4; }
+      .string { stroke: #57534e; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .force-red { stroke: #dc2626; stroke-width: 3; marker-end: url(#arrow-red); stroke-linecap: round; }
+      .force-blue { stroke: #2563eb; stroke-width: 3; marker-end: url(#arrow-blue); stroke-linecap: round; }
+      .force-green { stroke: #15803d; stroke-width: 3; marker-end: url(#arrow-green); stroke-linecap: round; }
+      .axis { stroke: #374151; stroke-width: 2.2; marker-end: url(#arrow-gray); stroke-linecap: round; }
+      .component { stroke: #9ca3af; stroke-width: 2; stroke-dasharray: 7 7; marker-end: url(#arrow-gray); stroke-linecap: round; }
+      .note { fill: #fef3c7; stroke: #f59e0b; stroke-width: 1.5; rx: 10; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="760"/>
+  <rect class="panel" x="34" y="28" width="1132" height="704"/>
+  <text class="title" x="64" y="76">Bài 5.90 - hai vật nối dây qua ròng rọc nhẹ</text>
+  <text class="subtitle" x="64" y="106">Mặt phẳng nghiêng trơn, dây nhẹ, ròng rọc nhỏ không ma sát: hai vật có cùng độ lớn gia tốc và cùng lực căng T.</text>
+
+  <polygon class="slope-fill" points="95,305 515,305 515,62"/>
+  <line class="slope" x1="95" y1="305" x2="515" y2="62"/>
+  <polygon class="slope-fill" points="685,62 1105,305 685,305"/>
+  <line class="slope" x1="685" y1="62" x2="1105" y2="305"/>
+  <circle class="pulley" cx="600" cy="70" r="38"/>
+  <circle fill="#78716c" cx="600" cy="70" r="9"/>
+  <path class="string" d="M360,152 L570,58"/>
+  <path class="string" d="M630,58 L840,152"/>
+
+  <g transform="translate(325 170) rotate(-30)">
+    <rect class="block1" x="-60" y="-38" width="120" height="76" rx="6"/>
+  </g>
+  <text class="label" x="265" y="121">m₁ = 100 kg</text>
+
+  <g transform="translate(875 170) rotate(30)">
+    <rect class="block2" x="-55" y="-36" width="110" height="72" rx="6"/>
+  </g>
+  <text class="label" x="910" y="121">m₂ = 50 kg</text>
+
+  <line class="axis" x1="322" y1="185" x2="225" y2="241"/>
+  <text class="formula" x="200" y="258">a</text>
+  <line class="axis" x1="878" y1="185" x2="975" y2="241"/>
+  <text class="formula" x="985" y="258">a</text>
+
+  <path d="M170 305 A75 75 0 0 1 235 267" fill="none" stroke="#374151" stroke-width="2"/>
+  <text class="label" x="205" y="292">30°</text>
+  <path d="M1028 305 A85 85 0 0 0 955 262" fill="none" stroke="#374151" stroke-width="2"/>
+  <text class="label" x="950" y="292">53,1°</text>
+
+  <rect class="note" x="390" y="318" width="420" height="56"/>
+  <text class="small" x="412" y="341">So sánh lực kéo dọc dốc:</text>
+  <text class="formula" x="412" y="364">m₁g sin30°  với  m₂g sin53,1°</text>
+
+  <text class="label" x="135" y="420">FBD của m₁</text>
+  <g transform="translate(285 555) rotate(-30)">
+    <rect class="block1" x="-62" y="-38" width="124" height="76" rx="6"/>
+  </g>
+  <line class="force-red" x1="285" y1="555" x2="285" y2="675"/>
+  <text class="formula" x="300" y="665">m₁g</text>
+  <line class="force-blue" x1="285" y1="555" x2="235" y2="468"/>
+  <text class="formula" x="204" y="462">N₁</text>
+  <line class="force-green" x1="285" y1="555" x2="390" y2="494"/>
+  <text class="formula" x="397" y="492">T</text>
+  <line class="component" x1="285" y1="555" x2="185" y2="613"/>
+  <text class="formula" x="112" y="626">m₁g sin30°</text>
+  <line class="axis" x1="285" y1="555" x2="190" y2="610"/>
+  <text class="formula" x="174" y="601">+x₁</text>
+
+  <text class="label" x="745" y="420">FBD của m₂</text>
+  <g transform="translate(900 555) rotate(30)">
+    <rect class="block2" x="-58" y="-36" width="116" height="72" rx="6"/>
+  </g>
+  <line class="force-red" x1="900" y1="555" x2="900" y2="675"/>
+  <text class="formula" x="915" y="665">m₂g</text>
+  <line class="force-blue" x1="900" y1="555" x2="950" y2="468"/>
+  <text class="formula" x="957" y="462">N₂</text>
+  <line class="force-green" x1="900" y1="555" x2="795" y2="494"/>
+  <text class="formula" x="772" y="492">T</text>
+  <line class="component" x1="900" y1="555" x2="1000" y2="613"/>
+  <text class="formula" x="1008" y="626">m₂g sin53,1°</text>
+  <line class="axis" x1="900" y1="555" x2="795" y2="494"/>
+  <text class="formula" x="768" y="526">+x₂</text>
+
+  <text class="small" x="64" y="710">Quy ước trong lời giải: +x₁ xuống dốc bên trái, +x₂ lên dốc bên phải. Nếu m₁ thắng, cả hai gia tốc theo mũi tên a.</text>
+</svg>

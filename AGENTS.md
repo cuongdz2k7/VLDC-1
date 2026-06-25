@@ -29,6 +29,8 @@ Sau đó AI phải tự xác định loại yêu cầu và đọc thêm file rul
 - Trình bày công thức bằng LaTeX khi cần.
 - Trong câu trả lời chat bình thường, dùng `\(...\)` cho ký hiệu hoặc công thức inline để dễ đọc trong khung chat.
 - Trong câu trả lời chat bình thường, dùng `$$...$$` cho công thức dài, phương trình chính hoặc chuỗi biến đổi cần đứng riêng dòng.
+- Trong câu trả lời chat bình thường, không dùng code block Markdown như ```md để minh họa lời giải, cách trình bày hoặc đoạn nên viết; hãy viết trực tiếp bằng văn bản và LaTeX để Codex hiển thị dễ đọc.
+- Chỉ dùng code block khi thật sự cần hiển thị lệnh, mã nguồn, nội dung file nguyên văn hoặc khi người học yêu cầu rõ.
 - Khi tạo hoặc sửa file Markdown, dùng `$...$` cho ký hiệu hoặc công thức ngắn nằm trong câu, bảng hoặc bullet.
 - Khi tạo hoặc sửa file Markdown, dùng `$$...$$` cho công thức dài, phương trình chính hoặc chuỗi biến đổi cần đứng riêng dòng.
 - Không dùng inline math dạng ngoặc tròn backslash trong file Markdown vì renderer Markdown hiện tại không hiển thị đúng.

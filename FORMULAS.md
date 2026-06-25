@@ -60,6 +60,16 @@ File này ghi công thức quan trọng cần nhớ khi ôn thi.
 - Trên mặt phẳng nghiêng:
   - Thành phần song song mặt phẳng: $mg\sin\alpha$.
   - Thành phần vuông góc mặt phẳng: $mg\cos\alpha$.
+- Với hệ hai vật nối bằng dây nhẹ, không giãn qua ròng rọc nhẹ không ma sát:
+  - Hai vật có cùng độ lớn gia tốc: $a_1=a_2=a$.
+  - Lực căng hai bên dây bằng nhau: $T_1=T_2=T$.
+  - Lực căng không tự động bằng trọng lực hay thành phần trọng lực; phải tìm từ $\sum F=ma$.
+  - Ví dụ vật $m_1$ đi xuống dốc và kéo vật $m_2$ đi lên dốc:
+    $$m_1g\sin\theta_1-T=m_1a,$$
+    $$T-m_2g\sin\theta_2=m_2a.$$
+  - Cộng hai phương trình để khử $T$:
+    $$a=\frac{m_1g\sin\theta_1-m_2g\sin\theta_2}{m_1+m_2}.$$
+- Ghi nhớ về định luật III Newton: lực phản lực nằm trên hai vật khác nhau nên không triệt tiêu khi xét riêng một vật.
 
 ## Chuyển động tròn
 
@@ -67,6 +77,13 @@ File này ghi công thức quan trọng cần nhớ khi ôn thi.
 - Gia tốc hướng tâm: $a_{rad} = \frac{v^2}{R} = \omega^2R$.
 - Lực hướng tâm: $F_n = ma_{rad} = m\frac{v^2}{R} = m\omega^2R$.
 - Chu kỳ và tần số: $\omega = \frac{2\pi}{T} = 2\pi f$.
+- Vật treo đứng yên tương đối trong xe đang rẽ đều, dây lệch góc $\theta$ so với phương thẳng đứng:
+  $$T\sin\theta=m\frac{v^2}{R},$$
+  $$T\cos\theta=mg,$$
+  $$\tan\theta=\frac{v^2}{Rg}.$$
+- Xe rẽ đều trên đường ngang, nếu bánh không trượt thì lực hướng tâm là ma sát nghỉ:
+  $$f_s=m\frac{v^2}{R},\qquad f_s\le \mu_sN.$$
+- Bánh xe lăn không trượt khi $v=\omega R$; nếu điểm tiếp xúc bị rê/lết/trượt tương đối với mặt đường thì dùng ma sát trượt.
 
 ## Công - động năng - thế năng
 

@@ -21,6 +21,32 @@ File này ghi các lỗi sai cần tránh khi học và làm đề.
 - Cách sửa: Dùng quy trình: xét cả hệ A+B để tìm gia tốc chung $a$, rồi xét riêng B để tìm lực tiếp xúc $F_{AB}=m_Ba$.
 - Dấu hiệu để lần sau tránh lỗi: Nếu đề hỏi lực giữa hai vật, phải tách riêng vật chịu lực đó; nội lực của hệ lớn sẽ trở thành ngoại lực của vật nhỏ được tách ra.
 
+- Bài thuộc chương: Động lực học, hai vật nối dây qua ròng rọc nhẹ trên hai mặt phẳng nghiêng.
+- Lỗi sai: Tưởng lực căng dây $T$ phải bằng thành phần trọng lực kéo vật nặng xuống dốc, ví dụ $T=m_1g\sin\theta_1$.
+- Vì sao sai: Định luật III Newton chỉ nói lực vật tác dụng lên dây và lực dây tác dụng lên vật có cùng độ lớn $T$; nó không nói $T$ bằng lực Trái Đất kéo vật. Lực phản lực không triệt tiêu trên cùng một vật. Nếu vật còn gia tốc thì hợp lực khác 0, nên lực căng không phải bản sao của trọng lực.
+- Cách sửa: Với từng vật, viết định luật II Newton theo phương chuyển động. Ví dụ nếu vật $m_1$ đi xuống dốc:
+  $$m_1g\sin\theta_1 - T = m_1a.$$
+  Nếu dây nhẹ, không giãn và ròng rọc nhẹ không ma sát thì hai vật có cùng độ lớn gia tốc và cùng lực căng hai bên dây.
+- Dấu hiệu để lần sau tránh lỗi: Nếu thấy mình đặt ngay $T=mg$, $T=m g\sin\theta$ hoặc nói "lực truyền nguyên sang dây", phải dừng lại hỏi vật có đang cân bằng hay chuyển động đều không. Nếu $a\ne0$, phải dùng $\sum F=ma$ để tìm $T$.
+
+## 2026-06-26 - Chương 2 động lực học
+
+- Bài thuộc chương: Động lực học, vật treo trong xe buýt rẽ ngang.
+- Lỗi sai: Nhầm tâm cong của hộp cơm với điểm treo trên trần xe.
+- Vì sao sai: Đề nói hộp đứng yên so với xe, nên hộp chuyển động cùng xe quanh tâm khúc cua. Điểm treo chỉ là nơi dây tác dụng lực căng lên hộp; tâm cong là tâm quỹ đạo tròn của xe/hộp và bán kính đề cho là $R=50{,}0\,m$.
+- Cách sửa: Khi xe rẽ đều, xét FBD của hộp với hai lực $T$ và $mg$; chọn trục ngang hướng vào tâm cong, trục đứng hướng lên. Viết $T\sin\theta=m v^2/R$ và $T\cos\theta=mg$.
+- Dấu hiệu để lần sau tránh lỗi: Nếu đề cho "đứng yên so với xe" và "cách tâm cong", hiểu là vật chuyển động tròn cùng xe, không phải con lắc đang lắc quanh điểm treo.
+
+- Lỗi sai: Tưởng xe đang chạy thì ma sát giữa lốp và đường là ma sát trượt.
+- Vì sao sai: Ma sát nghỉ hay trượt phụ thuộc vào điểm tiếp xúc có trượt tương đối không. Bánh xe lăn bình thường trên đường có điểm tiếp xúc đứng yên tức thời so với mặt đường, nên lực ma sát là ma sát nghỉ.
+- Cách sửa: Nhớ quy tắc: lăn không trượt thì dùng ma sát nghỉ; rê/lết/trượt thì dùng ma sát trượt. Với xe rẽ đều không trượt, ma sát nghỉ đóng vai trò lực hướng tâm.
+- Dấu hiệu để lần sau tránh lỗi: Nếu bánh không bị khóa, không rê ngang, không trượt tại chỗ tiếp xúc thì không dùng $f_k=\mu_kN$.
+
+- Lỗi sai: Tưởng tay lái hoặc động cơ trực tiếp tạo lực hướng tâm cho xe rẽ.
+- Vì sao sai: Tay lái chỉ đổi hướng bánh để lốp tương tác với mặt đường; lực ngang thật sự làm xe đổi hướng là ma sát nghỉ của mặt đường tác dụng lên lốp.
+- Cách sửa: Với xe rẽ trên đường ngang, viết $f_s=m v^2/R$ nếu xe rẽ đều và không trượt; kiểm tra điều kiện $m v^2/R\le \mu_sN$ nếu đề hỏi giới hạn trượt.
+- Dấu hiệu để lần sau tránh lỗi: Nếu không có ma sát ngang đủ lớn, xe không ôm cua được dù đã bẻ lái.
+
 ## 2026-06-25 - Tuần 1 động học
 
 - Bài thuộc chương: Động học, chuyển động nhiều giai đoạn và ném xiên.
