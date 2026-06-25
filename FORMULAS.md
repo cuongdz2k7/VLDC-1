@@ -64,8 +64,8 @@ File này ghi công thức quan trọng cần nhớ khi ôn thi.
 ## Chuyển động tròn
 
 - Tốc độ dài: $v = \omega R$.
-- Gia tốc hướng tâm: $a_n = \frac{v^2}{R} = \omega^2R$.
-- Lực hướng tâm: $F_n = ma_n = m\frac{v^2}{R} = m\omega^2R$.
+- Gia tốc hướng tâm: $a_{rad} = \frac{v^2}{R} = \omega^2R$.
+- Lực hướng tâm: $F_n = ma_{rad} = m\frac{v^2}{R} = m\omega^2R$.
 - Chu kỳ và tần số: $\omega = \frac{2\pi}{T} = 2\pi f$.
 
 ## Công - động năng - thế năng

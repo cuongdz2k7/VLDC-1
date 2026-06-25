@@ -166,13 +166,13 @@ Xuất hiện ở cả đề số 01 và đề số 02. Đây là dạng rất t
 ### Công thức và kỹ thuật
 
 - Tốc độ dài: $v = \omega R$.
-- Gia tốc hướng tâm: $a_n = \frac{v^2}{R} = \omega^2R$.
-- Lực hướng tâm: $F_n = ma_n$.
+- Gia tốc hướng tâm: $a_{rad} = \frac{v^2}{R} = \omega^2R$.
+- Lực hướng tâm: $F_n = ma_{rad}$.
 - Lực hướng tâm không phải là một lực mới, mà là hợp lực hướng vào tâm.
 
 ### Mức độ
 
-- Dễ: tính $v$, $\omega$, $a_n$.
+- Dễ: tính $v$, $\omega$, $a_{rad}$.
 - Trung bình: tìm lực căng hoặc lực ma sát đóng vai trò hướng tâm.
 - Khó: kết hợp chuyển động tròn với mặt phẳng nghiêng hoặc lực biến thiên.
 
