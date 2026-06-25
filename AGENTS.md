@@ -86,6 +86,14 @@ Khi làm việc trong project này, hãy đọc và ưu tiên context theo thứ
 
 Nếu có PDF hoặc tài liệu thầy gửi, hãy ưu tiên công thức, ký hiệu và kỹ thuật giải trong tài liệu đó. Nếu tài liệu mâu thuẫn với cách nhớ chung, hãy báo rõ điểm khác biệt.
 
+## Báo cáo context đã dùng
+
+- Trong mọi câu trả lời, AI phải ghi ngắn gọn các file đã đọc hoặc đã dùng làm context.
+- Mục này đặt ở cuối câu trả lời, dạng: `Context đã dùng: ...`.
+- Nếu có file được yêu cầu nhưng không đọc được, phải ghi rõ trong dòng context, ví dụ: `Không đọc được: EXAM_CONTEXT.md vì file không tồn tại`.
+- Không cần liệt kê file không liên quan hoặc file chỉ được nhắc nhưng không thật sự dùng.
+- Nếu câu trả lời rất ngắn, vẫn phải có dòng `Context đã dùng`.
+
 ## Cách hiểu prompt
 
 - Nếu prompt không ghi `Task`, hãy suy ra việc cần làm từ `Context`, `Goal`, `Input`, `Custom`, `Update` và rule phù hợp.
