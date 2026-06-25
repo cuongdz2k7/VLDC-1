@@ -143,8 +143,11 @@ Dừng lại.
 - Giải thích tại sao cần bước đó.
 - Không nhảy bước.
 - Không nhảy thẳng vào thay số khi chưa xác định biến đã biết, biến cần tìm và ý nghĩa từng ký hiệu trong công thức.
+- Trước khi thay số, ghi công thức hoặc biểu thức chính xác.
 - Khi tính toán, tuân thủ mục `Quy tắc tính toán và làm tròn` trong `AGENTS.md`.
-- Nếu tính ra đại lượng trung gian còn dùng tiếp, giữ 4 đến 6 chữ số có nghĩa hoặc giữ biểu thức chính xác; không dùng số đã làm tròn thô để thay vào bước sau.
+- Với bài có lượng giác như mặt phẳng nghiêng, dây xiên, ném xiên, chuyển động tròn hoặc số xấu, dùng công cụ tính toán cho giá trị số nếu có.
+- Không tự ước lượng tay rồi trình bày như kết quả số chính xác.
+- Nếu tính ra đại lượng trung gian còn dùng tiếp, giữ ít nhất 6 chữ số có nghĩa hoặc giữ biểu thức chính xác; không dùng số đã làm tròn thô để thay vào bước sau.
 - Nếu viết xấp xỉ ngắn cho dễ nhìn, bước tính tiếp phải dùng giá trị chưa làm tròn và ghi rõ nếu cần.
 - Luôn giữ nhất quán chiều dương và dấu.
 - Khi có ròng rọc hoặc vật rắn quay, kiểm tra có cần phương trình mômen không.

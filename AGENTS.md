@@ -48,13 +48,16 @@ Sau đó AI phải tự xác định loại yêu cầu và đọc thêm file rul
 
 - Ưu tiên giữ kết quả trung gian ở dạng chính xác như phân số, căn hoặc biểu thức đại số.
 - Không đổi sang số thập phân sớm nếu kết quả đó còn dùng cho bước sau.
+- Nếu phép tính có lượng giác, căn, log, số mũ, nhiều phép chia nhân liên tiếp, hoặc đại lượng trung gian còn dùng tiếp, phải dùng công cụ tính toán nếu có.
+- Nếu chưa dùng công cụ tính toán, không được ghi số thập phân cụ thể như thể đã kiểm chứng; hãy giữ biểu thức hoặc ghi rõ cần tính bằng máy.
 - Nếu phải dùng số thập phân trung gian, giữ đủ nhiều chữ số để sai số không ảnh hưởng kết quả cuối.
 - Không làm tròn ở bước trung gian.
-- Nếu một đại lượng trung gian như $t$, $v$, $a$, $D$ còn được dùng để tính tiếp, phải giữ ít nhất 4 đến 6 chữ số có nghĩa hoặc dùng trực tiếp biểu thức chưa làm tròn.
+- Nếu một đại lượng trung gian như $t$, $v$, $a$, $D$, $T$, $N$ còn được dùng để tính tiếp, phải giữ ít nhất 6 chữ số có nghĩa hoặc dùng trực tiếp biểu thức chưa làm tròn.
 - Nếu trong lời giải có ghi giá trị xấp xỉ ngắn để dễ đọc, khi thay vào bước sau phải nói rõ đang dùng giá trị chưa làm tròn.
 - Không được dùng giá trị đã làm tròn thô như $t\approx 3{,}20\,s$ để nhân tiếp nếu việc đó làm lệch kết quả cuối; phải dùng $t\approx 3{,}2134\,s$ hoặc biểu thức chính xác hơn.
 - Kết quả cuối nên ghi dạng chính xác nếu gọn, kèm xấp xỉ nếu cần.
 - Với số xấu, ghi xấp xỉ tốt trước rồi mới làm tròn kết luận.
+- Nếu người học nghi ngờ hoặc hỏi lại kết quả số, phải kiểm tra lại bằng công cụ trước khi trả lời tiếp.
 - Nếu đề không yêu cầu khác, kết luận thường dùng 3 chữ số có nghĩa hoặc 2 chữ số sau dấu phẩy, nhưng phải theo độ chính xác của dữ kiện đề.
 - Không làm tròn sai hướng: ví dụ $5{,}5858$ phải làm tròn thành $5{,}59$, không phải $5{,}58$.
 - Ví dụ tốt: $v=-\sqrt{1072}\,m/s\approx -32{,}74\,m/s$.
