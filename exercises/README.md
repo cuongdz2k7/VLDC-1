@@ -33,8 +33,8 @@ Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERN
 
 ## Bảng bài tập và mục đích luyện
 
-| Bài | Dạng bài | Mức độ | Khả năng ra thi | Ưu tiên | Mục đích luyện | Kiến thức cần trước khi làm |
-| --- | --- | --- | --- | --- | --- | --- |
+| Bài | Dạng bài | Mức độ | Khả năng ra thi | Dẫn chứng ưu tiên | Ưu tiên | Mục đích luyện | Kiến thức cần trước khi làm |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Công thức cần nhớ bắt buộc
 
@@ -73,6 +73,9 @@ Khi bỏ qua bài, luôn ghi lý do để sau này kiểm tra lại.
 
 - Mỗi bài phải gắn với một mục đích luyện rõ ràng, ví dụ: luyện đọc đồ thị, luyện chọn chiều dương, luyện tách trục $x,y$.
 - `Ưu tiên` cho biết có nên làm bài đó không; `Mục đích luyện` cho biết vì sao bài đó đáng làm.
+- `Dẫn chứng ưu tiên` phải nêu nguồn context cụ thể, ví dụ `EXAM_CONTEXT.md`, `EXAM_ANALYSIS.md`, `EXAM_PATTERNS.md`, `LEARNING_PLAN.md` hoặc file priority cũ nếu đang cập nhật.
+- Không ghi `Khả năng ra thi` kiểu kết luận chung chung nếu không có căn cứ đi kèm.
+- Nếu bài chỉ được suy luận từ bảng trọng tâm hoặc dùng để luyện nền, phải ghi rõ trong `Dẫn chứng ưu tiên`; không viết như thể chắc chắn sẽ xuất hiện trong đề.
 - Bài ít khả năng ra thi vẫn có thể giữ lại nếu nó giúp sửa một lỗi nền quan trọng.
 
 ## Quy tắc ghi thứ tự làm bài và gợi ý ôn nhanh

@@ -14,7 +14,7 @@ Dùng khi người học gửi danh sách hoặc ảnh bài tập trọng tâm c
 ## Việc cần làm
 
 1. Đọc danh sách bài tập từ ảnh hoặc input.
-2. Phân loại từng bài theo dạng, mức độ, khả năng ra thi.
+2. Phân loại từng bài theo dạng, mức độ, khả năng ra thi và dẫn chứng ưu tiên.
 3. Gắn ưu tiên: bắt buộc, nên làm, làm nếu còn thời gian, bỏ qua.
 4. Nêu lý do chọn hoặc bỏ bài.
 5. Ghi kiến thức cần trước khi làm.
@@ -22,6 +22,20 @@ Dùng khi người học gửi danh sách hoặc ảnh bài tập trọng tâm c
 7. Tạo khung tư duy theo dạng bài: dấu hiệu nhận biết, mục tiêu, thought process, cách trình bày, công thức, bẫy dễ sai.
 8. Đề xuất thứ tự làm bài từ dễ đến khó.
 9. Trong `Thứ tự làm bài đề xuất` và `Gợi ý ôn nhanh`, mỗi bài hoặc nhóm bài nên có ghi chú ngắn trong ngoặc nói vì sao chọn hoặc luyện kiến thức gì.
+
+## Quy tắc dẫn chứng ưu tiên
+
+- Khi ghi `Khả năng ra thi`, không được chỉ ghi kết luận như `Cao`, `Trung bình`, `Thấp` mà thiếu căn cứ.
+- Mỗi bài trong bảng phải có cột `Dẫn chứng ưu tiên` hoặc nội dung tương đương, nêu nguồn context cụ thể.
+- Dẫn chứng ưu tiên lấy từ:
+  - `EXAM_CONTEXT.md`: cấu trúc điểm, chương rất trọng tâm, bảng trọng tâm ôn tập.
+  - `EXAM_ANALYSIS.md`: đề mẫu, ma trận chương theo phần thi, kỹ năng đã xuất hiện.
+  - `EXAM_PATTERNS.md`: dạng bài tương ứng và lỗi sai thường gặp.
+  - `LEARNING_PLAN.md`: buổi học, nhóm kiến thức và thứ tự ưu tiên.
+  - File `exercises/[ten-chuong]-priority.md` cũ nếu đang cập nhật.
+- Nếu bài giống trực tiếp đề mẫu hoặc pattern đã ghi, nói rõ nguồn đó.
+- Nếu bài chỉ được suy luận từ bảng trọng tâm hoặc là bài luyện nền, ghi rõ là `suy luận từ bảng trọng tâm`, `luyện nền` hoặc `làm nếu còn thời gian`, không nói như chắc chắn sẽ ra thi.
+- Dẫn chứng trong bảng cần ngắn, thường 1-2 ý; không biến bảng thành đoạn giải thích dài.
 
 ## Khi cập nhật file
 

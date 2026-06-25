@@ -20,18 +20,18 @@ Trong đề PHY1095, phần này có thể không luôn xuất hiện đúng ngu
 
 ## Bảng bài tập và mục đích luyện
 
-| Bài | Dạng bài | Mức độ | Khả năng ra thi | Ưu tiên | Mục đích luyện | Kiến thức cần trước khi làm |
-| --- | --- | --- | --- | --- | --- | --- |
-| 6.7 | Công của từng lực trong hệ hai vật nối dây, chuyển động đều | Trung bình | Trung bình | Nên làm | Luyện dấu công, lực căng, ma sát và công tổng cộng khi $v$ không đổi | Công $A=Fs\cos\theta$, định lý công - động năng, phân tích lực |
-| 6.8 | Công của lực không đổi bằng tích vô hướng | Dễ | Cao ở mức câu ngắn | Bắt buộc | Luyện tính $A=\vec F\cdot\vec s$ và dấu khi vector không cùng chiều | Tích vô hướng, thành phần vector |
-| 6.24 | Định lý công - động năng cho ném thẳng đứng | Trung bình | Cao | Bắt buộc | Luyện dùng năng lượng để tìm vận tốc đầu và độ cao cực đại | $A_{net}=\Delta K$, công của trọng lực, chọn mốc độ cao |
-| 7.26 | Công của trọng lực trên đường kín | Dễ đến trung bình | Cao ở lý thuyết | Bắt buộc | Hiểu trọng lực là lực thế, công chỉ phụ thuộc độ cao đầu - cuối | $A_g=-\Delta U_g$, lực thế, đường kín |
-| 7.42 | Vòng lượn không ma sát, bảo toàn cơ năng và điều kiện không rời ray | Khó | Trung bình đến cao | Nên làm | Luyện kết hợp năng lượng với chuyển động tròn | Bảo toàn cơ năng, $a_{rad}=v^2/R$, điều kiện tại đỉnh vòng |
-| 7.54 | Trượt tuyết có ma sát, lực cản và dừng lại | Trung bình đến khó | Cao | Bắt buộc | Luyện công của lực không thế làm cơ năng giảm | $K_1+U_1+A_{\text{không thế}}=K_2+U_2$, công ma sát, công lực cản |
-| 7.55 | Trượt trên mặt cầu không ma sát, mất tiếp xúc | Khó | Trung bình | Làm nếu còn thời gian | Luyện bài năng lượng + lực hướng tâm ở mức nâng cao | Bảo toàn cơ năng, phương trình hướng tâm, điều kiện $N=0$ |
-| 7.56 | Ném xiên tìm độ cao cực đại bằng năng lượng | Dễ | Cao ở mức câu ngắn | Bắt buộc | Luyện tách vận tốc ban đầu và dùng năng lượng cho phương thẳng đứng | $v_{0y}=v_0\sin\theta$, $K_1+U_1=K_2+U_2$ |
-| 7.57 | Đường cong 1/4 hình tròn và mặt phẳng ngang có ma sát | Trung bình đến khó | Cao | Bắt buộc | Luyện suy ngược ma sát từ đoạn ngang rồi tìm công ma sát trên cung | Bảo toàn năng lượng có ma sát, công ma sát, thế năng trọng trường |
-| 8.48 | Va chạm đàn hồi một chiều | Trung bình | Cao cho cụm động lượng - va chạm | Nên làm | Luyện bảo toàn động lượng và động năng trong va chạm đàn hồi | Chọn chiều dương, $p=mv$, bảo toàn động lượng, bảo toàn động năng |
+| Bài | Dạng bài | Mức độ | Khả năng ra thi | Dẫn chứng ưu tiên | Ưu tiên | Mục đích luyện | Kiến thức cần trước khi làm |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 6.7 | Công của từng lực trong hệ hai vật nối dây, chuyển động đều | Trung bình | Trung bình | `EXAM_PATTERNS.md` Dạng 8 có công - động năng; bài này cũng luyện nền phân tích lực cho cơ học bài tập trong `EXAM_CONTEXT.md` | Nên làm | Luyện dấu công, lực căng, ma sát và công tổng cộng khi $v$ không đổi | Công $A=Fs\cos\theta$, định lý công - động năng, phân tích lực |
+| 6.8 | Công của lực không đổi bằng tích vô hướng | Dễ | Cao ở mức câu ngắn | `EXAM_ANALYSIS.md` ma trận cơ học bài tập có công khi lực thay đổi/không đổi; `EXAM_PATTERNS.md` Dạng 8 yêu cầu tính công | Bắt buộc | Luyện tính $A=\vec F\cdot\vec s$ và dấu khi vector không cùng chiều | Tích vô hướng, thành phần vector |
+| 6.24 | Định lý công - động năng cho ném thẳng đứng | Trung bình | Cao | `EXAM_CONTEXT.md` xếp công, động năng và thế năng vào chương rất trọng tâm; `EXAM_PATTERNS.md` Dạng 8 hỏi vận tốc, độ cao, năng lượng | Bắt buộc | Luyện dùng năng lượng để tìm vận tốc đầu và độ cao cực đại | $A_{net}=\Delta K$, công của trọng lực, chọn mốc độ cao |
+| 7.26 | Công của trọng lực trên đường kín | Dễ đến trung bình | Cao ở lý thuyết | `EXAM_ANALYSIS.md` ma trận cơ học lý thuyết có thế năng hấp dẫn, lực thế và công của trường lực thế; bài này kiểm tra đúng ý đó | Bắt buộc | Hiểu trọng lực là lực thế, công chỉ phụ thuộc độ cao đầu - cuối | $A_g=-\Delta U_g$, lực thế, đường kín |
+| 7.42 | Vòng lượn không ma sát, bảo toàn cơ năng và điều kiện không rời ray | Khó | Trung bình đến cao | `EXAM_PATTERNS.md` Dạng 7 chuyển động tròn và Dạng 8 năng lượng đều trọng tâm; đây là bài kết hợp nên sát kỹ năng nhưng khó hơn đề cơ bản | Nên làm | Luyện kết hợp năng lượng với chuyển động tròn | Bảo toàn cơ năng, $a_{rad}=v^2/R$, điều kiện tại đỉnh vòng |
+| 7.54 | Trượt tuyết có ma sát, lực cản và dừng lại | Trung bình đến khó | Cao | `EXAM_PATTERNS.md` Dạng 8 nêu lỗi dùng bảo toàn cơ năng khi có lực không bảo toàn; `LEARNING_PLAN.md` Buổi 2 yêu cầu luyện công - năng lượng | Bắt buộc | Luyện công của lực không thế làm cơ năng giảm | $K_1+U_1+A_{\text{không thế}}=K_2+U_2$, công ma sát, công lực cản |
+| 7.55 | Trượt trên mặt cầu không ma sát, mất tiếp xúc | Khó | Trung bình | `EXAM_PATTERNS.md` Dạng 7 và Dạng 8 có liên quan, nhưng bài là biến thể nâng cao điều kiện $N=0$ nên làm sau | Làm nếu còn thời gian | Luyện bài năng lượng + lực hướng tâm ở mức nâng cao | Bảo toàn cơ năng, phương trình hướng tâm, điều kiện $N=0$ |
+| 7.56 | Ném xiên tìm độ cao cực đại bằng năng lượng | Dễ | Cao ở mức câu ngắn | `EXAM_CONTEXT.md` công - động năng - thế năng là trọng tâm; `LEARNING_PLAN.md` Buổi 2 yêu cầu luyện dùng năng lượng tìm vận tốc, độ cao, công | Bắt buộc | Luyện tách vận tốc ban đầu và dùng năng lượng cho phương thẳng đứng | $v_{0y}=v_0\sin\theta$, $K_1+U_1=K_2+U_2$ |
+| 7.57 | Đường cong 1/4 hình tròn và mặt phẳng ngang có ma sát | Trung bình đến khó | Cao | `EXAM_PATTERNS.md` Dạng 8 nhấn mạnh công, năng lượng và lực không bảo toàn; bài này luyện đúng bẫy ma sát và tách giai đoạn | Bắt buộc | Luyện suy ngược ma sát từ đoạn ngang rồi tìm công ma sát trên cung | Bảo toàn năng lượng có ma sát, công ma sát, thế năng trọng trường |
+| 8.48 | Va chạm đàn hồi một chiều | Trung bình | Cao cho cụm động lượng - va chạm | `EXAM_CONTEXT.md` xếp động lượng, xung lượng và va chạm vào chương rất trọng tâm; `EXAM_PATTERNS.md` Dạng 9 có va chạm đàn hồi | Nên làm | Luyện bảo toàn động lượng và động năng trong va chạm đàn hồi | Chọn chiều dương, $p=mv$, bảo toàn động lượng, bảo toàn động năng |
 
 ## Công thức cần nhớ bắt buộc
 
@@ -208,4 +208,3 @@ Trong đề PHY1095, phần này có thể không luôn xuất hiện đúng ngu
 - Không tách giai đoạn trong bài nhiều đoạn có điều kiện lực khác nhau.
 - Với vòng lượn/mặt cầu, dùng năng lượng mà quên phương trình hướng tâm.
 - Với va chạm, quên động lượng là vector và quên đổi g sang kg.
-
