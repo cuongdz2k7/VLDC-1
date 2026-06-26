@@ -46,12 +46,14 @@ Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERN
 ### Dạng 1: [Tên dạng]
 
 - Bài áp dụng:
-- Dấu hiệu nhận biết:
+- Nhận dạng trong đề:
 - Mục tiêu:
-- Thought process:
+- Công thức bật ra đầu tiên:
+- Chọn công thức tiếp theo theo câu hỏi đề:
+- Cách tư duy giải:
 - Cách trình bày:
-- Công thức cần dùng:
-- Bẫy dễ sai:
+- Bẫy nhận dạng sai:
+- Lỗi tính toán/trình bày dễ mất điểm:
 
 ## Thứ tự làm bài đề xuất
 
@@ -95,7 +97,11 @@ Khi bỏ qua bài, luôn ghi lý do để sau này kiểm tra lại.
 ## Quy tắc ghi khung tư duy theo dạng bài
 
 - Mỗi dạng bài chính nên có một khung tư duy riêng, không cần viết lời giải chi tiết cho từng bài.
-- `Thought process` là các câu hỏi tự hỏi khi gặp dạng bài, ví dụ: cần tìm gì, dữ kiện nào quyết định công thức, có phải chọn chiều dương không.
+- `Nhận dạng trong đề` phải ghi rõ dấu hiệu cụ thể giúp nhận ra dạng bài: cụm từ trong đề, hình vẽ, đại lượng được cho, đại lượng cần tìm, điều kiện như không trượt, đẳng nhiệt, ròng rọc có khối lượng.
+- `Công thức bật ra đầu tiên` là công thức hoặc định luật lõi dùng để mở bài, ví dụ $\sum M=I\alpha$, $Q=\Delta U+A$, $A=\int p\,dV$.
+- `Chọn công thức tiếp theo theo câu hỏi đề` nối từng kiểu câu hỏi với công thức tương ứng, ví dụ hỏi vận tốc thì dùng công thức động học, hỏi công thì dùng công thức công, hỏi lực căng thì lập thêm phương trình Newton.
+- `Cách tư duy giải` là các câu hỏi tự hỏi khi gặp dạng bài, ví dụ: cần tìm gì, dữ kiện nào quyết định công thức, có phải chọn chiều dương không.
 - `Cách trình bày` là thứ tự viết lời giải sao cho dễ kiểm tra: chọn trục, ghi dữ kiện, viết công thức, thay số, kết luận, kiểm tra đơn vị và dấu.
+- `Bẫy nhận dạng sai` là các trường hợp nhìn giống nhưng dùng sai công thức hoặc sai điều kiện áp dụng.
 - Mỗi dạng phải gắn với bài áp dụng cụ thể trong bảng bài tập.
 - Nội dung cần ngắn gọn, phục vụ học nhanh và làm bài tương tự, không biến file thành lời giải đầy đủ.

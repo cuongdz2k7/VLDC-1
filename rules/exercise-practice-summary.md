@@ -19,9 +19,33 @@ Dùng khi người học gửi danh sách hoặc ảnh bài tập trọng tâm c
 4. Nêu lý do chọn hoặc bỏ bài.
 5. Ghi kiến thức cần trước khi làm.
 6. Rút công thức bắt buộc: công thức, ý nghĩa, vì sao cần nhớ, dùng cho bài nào.
-7. Tạo khung tư duy theo dạng bài: dấu hiệu nhận biết, mục tiêu, thought process, cách trình bày, công thức, bẫy dễ sai.
+7. Tạo khung tư duy theo dạng bài: nhận diện trong đề, công thức bật ra, cách chọn công thức theo câu hỏi, thought process, cách trình bày, bẫy nhận dạng sai và lỗi dễ sai.
 8. Đề xuất thứ tự làm bài từ dễ đến khó.
 9. Trong `Thứ tự làm bài đề xuất` và `Gợi ý ôn nhanh`, mỗi bài hoặc nhóm bài nên có ghi chú ngắn trong ngoặc nói vì sao chọn hoặc luyện kiến thức gì.
+
+## Quy tắc nhận diện dạng bài trong priority
+
+- File `exercises/*-priority.md` không chỉ là danh sách bài nên làm, mà phải là bản đồ nhận diện dạng bài.
+- Mỗi dạng bài chính trong mục `Khung tư duy theo dạng bài` phải giúp người học nhìn đề và trả lời được:
+  - Bài này thuộc dạng nào?
+  - Dấu hiệu nào trong đề cho thấy dạng đó?
+  - Công thức hoặc định luật nào phải bật ra đầu tiên?
+  - Nếu đề hỏi đại lượng khác nhau thì chọn công thức tiếp theo như thế nào?
+  - Cần tự hỏi gì trước khi thay số?
+  - Bẫy nhận dạng sai là gì?
+- Với mỗi dạng bài, ưu tiên cấu trúc:
+  - `Bài áp dụng`.
+  - `Nhận dạng trong đề`.
+  - `Công thức bật ra đầu tiên`.
+  - `Chọn công thức tiếp theo theo câu hỏi đề`.
+  - `Cách tư duy giải`.
+  - `Cách trình bày`.
+  - `Bẫy nhận dạng sai`.
+  - `Lỗi tính toán/trình bày dễ mất điểm`.
+- `Nhận dạng trong đề` phải cụ thể, ví dụ: đề có cụm nào, đại lượng nào, hình vẽ nào, yêu cầu tìm gì.
+- `Công thức bật ra đầu tiên` là công thức hoặc định luật lõi để mở bài, không phải toàn bộ bảng công thức.
+- `Chọn công thức tiếp theo theo câu hỏi đề` phải nối câu hỏi của đề với công thức cần dùng, ví dụ hỏi thời gian, hỏi vận tốc, hỏi công, hỏi lực căng, hỏi nhiệt lượng.
+- Không viết khung tư duy quá chung kiểu "áp dụng công thức phù hợp"; phải nói rõ công thức nào và điều kiện dùng.
 
 ## Quy tắc dẫn chứng ưu tiên
 

@@ -59,7 +59,8 @@ Không dùng `topics/` để lưu danh sách từng bài tập cụ thể. Danh 
 - `Kiến thức cốt lõi`: chỉ ghi phần cần để làm bài, không viết lại lý thuyết dài.
 - `Công thức cần nhớ`: ghi công thức trọng tâm, không chép bảng công thức quá dài từ `exercises/`.
 - `Công thức bắt buộc liên kết với bài tập ưu tiên`: lấy từ mục công thức bắt buộc trong file `exercises/`, kèm bài/dạng áp dụng nếu cần.
-- `Quy trình giải chung`: cô đọng từ khung tư duy theo dạng bài trong file `exercises/`.
+- `Dạng bài hay ra`: với mỗi dạng chính, ghi ngắn gọn dấu hiệu nhận diện trong đề, công thức lõi cần bật ra và bẫy nhận dạng sai nếu có.
+- `Quy trình giải chung`: cô đọng từ khung tư duy theo dạng bài trong file `exercises/`, ưu tiên luồng nhìn đề → nhận dạng dạng bài → chọn công thức lõi → kiểm tra điều kiện áp dụng.
 - `Bài đại diện nên xem lại`: ưu tiên bài bắt buộc và bài nên làm trong file `exercises/`.
 - Không copy nguyên bảng bài tập hoặc toàn bộ khung tư duy từ `exercises/`; chỉ rút ý chính.
 - Nếu có công thức dùng lại nhiều lần, đồng thời cập nhật `FORMULAS.md` khi `Update` cho phép.

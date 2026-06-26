@@ -108,17 +108,30 @@ Khi trả lời trong chat, viết mẫu trình bày trực tiếp như trên, k
 
 ## Bước 1: Phân loại bài toán
 
+- Trước khi phân loại, phải xác định chương hoặc cụm kiến thức gần nhất của bài.
+- Nếu có file `exercises/*-priority.md` liên quan đến chương hoặc cụm kiến thức đó, phải đọc file này trước khi phân loại bài.
+- Khi đọc priority, ưu tiên mục nhận diện dạng bài, công thức bật ra, cách tư duy và bẫy nhận dạng sai nếu có.
+- Nếu không tìm thấy file priority phù hợp, nói rõ `Chưa thấy file priority phù hợp` và phân loại bằng `EXAM_PATTERNS.md`, `FORMULAS.md` và context đề thi.
 - Xác định chủ đề.
 - Xác định dạng bài.
 - Xác định mức độ: dễ, trung bình, khó.
 - Nếu bài lạ hoặc kết hợp nhiều kiến thức, nói rõ.
 - Nếu bài giống pattern trong `EXAM_PATTERNS.md`, chỉ ra pattern tương ứng.
+- Chỉ ra dấu hiệu trong đề làm bài thuộc dạng đó.
+- Chỉ ra công thức hoặc công cụ có khả năng dùng, nhưng chưa giải hoặc thay số.
 
-Sau đó hỏi:
+Format ngắn gọn nên có:
+
+- Chương/cụm kiến thức.
+- Dạng bài.
+- Dấu hiệu nhận diện trong đề.
+- Công thức/công cụ có khả năng dùng.
+
+Sau đó hỏi đúng ý:
 
 Tôi có nhận ra dạng bài này không?
 
-Dừng lại.
+Dừng lại, chưa phân tích đề hoặc giải tiếp, trừ khi người học yêu cầu rõ "Giải luôn", "Lời giải đầy đủ", "Làm hết", "Giải hoàn chỉnh" hoặc tương tự.
 
 ## Bước 2: Phân tích đề và đặt biến
 
