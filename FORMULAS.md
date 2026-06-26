@@ -47,12 +47,17 @@ File này ghi công thức quan trọng cần nhớ khi ôn thi.
 - Thanh mảnh qua khối tâm: $I_{CM} = \frac{1}{12}ML^2$.
 - Thanh mảnh qua một đầu: $I = \frac{1}{3}ML^2$.
 - Ròng rọc dạng đĩa đặc: $I = \frac{1}{2}MR^2$.
+- Vòng mỏng quanh trục qua tâm, vuông góc mặt vòng: $I=MR^2$.
+- Quả cầu đặc quanh trục qua tâm: $I=\frac{2}{5}MR^2$.
 
 ## Động lực học vật rắn quay
 
 - Mômen lực: $M = Fr\sin\varphi$.
 - Phương trình quay: $\sum M = I\alpha$.
 - Điều kiện không trượt giữa dây và ròng rọc: $a = \alpha R$.
+- Nếu không trượt ở vành ròng rọc/bánh xe: $v=\omega R$.
+- Động năng quay: $K_{quay}=\frac{1}{2}I\omega^2$.
+- Công của mômen lực: $A_M=\int M\,d\theta$; nếu $M$ không đổi thì $A_M=M\Delta\theta$.
 
 ## Định luật II Newton
 

@@ -97,6 +97,26 @@ File này ghi các lỗi sai cần tránh khi học và làm đề.
 - Nhầm khối lượng vật treo với khối lượng ròng rọc.
 - Quên đổi bán kính từ cm sang m.
 
+## 2026-06-27 - Vật rắn quay
+
+- Bài thuộc chương: Vật rắn quay, động học quay với gia tốc góc không đổi.
+- Lỗi sai: Nhầm vận tốc góc có dấu $\omega$ với tốc độ góc $|\omega|$.
+- Vì sao sai: $\omega$ cho biết cả độ lớn và chiều quay; tốc độ góc chỉ là độ lớn nên luôn không âm.
+- Cách sửa: Khi đề hỏi nhanh dần/chậm dần, xét $|\omega|$. Khi đề hỏi độ dịch chuyển góc, dùng $\Delta\theta$ có dấu.
+- Dấu hiệu để lần sau tránh lỗi: Nếu thấy $\omega$ âm, không kết luận là "chậm"; trước hết hỏi đề đang hỏi vận tốc góc hay tốc độ góc.
+
+- Bài thuộc chương: Vật rắn quay, ròng rọc/bánh xe có dây nhẹ.
+- Lỗi sai: Tưởng dây không khối lượng thì lực căng dây $T=0$.
+- Vì sao sai: Dây nhẹ vẫn truyền lực căng; giả thiết khối lượng dây không đáng kể chỉ làm ta bỏ qua động năng và động lực học riêng của dây. Nếu $T=0$ thì không có mômen $TR$ làm trống/ròng rọc quay.
+- Cách sửa: Hiểu dây nhẹ là vật truyền lực/năng lượng gần như không tích trữ năng lượng. Khi xét ròng rọc có $I$, lực căng tạo mômen $TR=I\alpha$.
+- Dấu hiệu để lần sau tránh lỗi: Nếu dây đang kéo vật hoặc làm ròng rọc quay, không được đặt $T=0$ chỉ vì dây nhẹ.
+
+- Bài thuộc chương: Vật rắn quay, vật rơi truyền năng lượng cho trống quay.
+- Lỗi sai: Dùng gia tốc rơi tự do $a=g$ cho vật đang kéo trống quay.
+- Vì sao sai: Vật không rơi tự do vì còn chịu lực căng dây hướng ngược chuyển động; một phần thế năng chuyển thành động năng quay của trống.
+- Cách sửa: Nếu đề hỏi năng lượng và bỏ qua ma sát, viết $mgh=K_{\text{vật}}+K_{\text{trống}}$. Nếu dùng động lực học, phải viết $mg-T=ma$, $TR=I\alpha$, $a=\alpha R$.
+- Dấu hiệu để lần sau tránh lỗi: Nếu vật rơi có dây nối với ròng rọc/trống có mômen quán tính, không dùng ngay $v^2=2gh$.
+
 ## Lỗi về mặt phẳng nghiêng
 
 - Nhầm $mg\sin\alpha$ và $mg\cos\alpha$.

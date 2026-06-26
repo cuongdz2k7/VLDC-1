@@ -19,7 +19,7 @@
 - `[~]` Chuyển động tròn.
 - `[x]` Công - động năng - thế năng.
 - `[ ]` Động lượng - xung lượng - va chạm.
-- `[ ]` Vật rắn quay: mômen lực, mômen quán tính, năng lượng quay.
+- `[~]` Vật rắn quay: mômen lực, mômen quán tính, năng lượng quay.
 
 ### Nhóm 2: Nhiệt học bài tập 3 điểm
 
@@ -33,9 +33,9 @@
 
 - `[ ]` Thế năng hấp dẫn và lực thế.
 - `[ ]` Trọng tâm và khối tâm.
-- `[ ]` Vận tốc góc, gia tốc góc.
-- `[ ]` Chuyển động quay với gia tốc góc không đổi.
-- `[ ]` Định lý trục song song và mômen quán tính.
+- `[~]` Vận tốc góc, gia tốc góc.
+- `[~]` Chuyển động quay với gia tốc góc không đổi.
+- `[~]` Định lý trục song song và mômen quán tính.
 - `[ ]` Vệ tinh, Kepler, chuyển động hành tinh.
 - `[ ]` Dao động điều hòa, năng lượng và ứng dụng.
 
@@ -86,10 +86,11 @@
 
 ### Buổi 4: Vật rắn quay
 
-- Ôn vận tốc góc, gia tốc góc.
-- Ôn mômen lực, mômen quán tính, định lý trục song song.
-- Ôn năng lượng trong chuyển động quay.
-- Luyện bài ròng rọc có mômen quán tính và vật quay quanh trục.
+- `[~]` Ôn vận tốc góc, gia tốc góc.
+- `[~]` Ôn mômen lực, mômen quán tính, định lý trục song song.
+- `[~]` Ôn năng lượng trong chuyển động quay.
+- `[~]` Luyện bài ròng rọc có mômen quán tính và vật quay quanh trục.
+- `[ ]` Cần luyện thêm bài sát đề 9.72 để chắc hệ phương trình $\sum F=ma$, $\sum M=I\alpha$, $a=\alpha R$.
 
 ### Buổi 5: Khí lí tưởng + đồ thị p-V
 
