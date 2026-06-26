@@ -168,9 +168,14 @@ Tôi muốn hiểu [khái niệm] và biết dùng trong bài tập/đề thi.
 
 Input:
 Câu hỏi của tôi: [ghi câu hỏi].
+Nếu có đoạn lý thuyết/công thức/mục lục cần giải thích:
+[dán đoạn cần hỏi].
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
+[Nếu muốn: Giải thích từng phần, tôi xác nhận rồi mới chuyển tiếp.]
+[Nếu muốn: Giải thích chi tiết hoàn chỉnh.]
+[Nếu muốn: Giải thích ngắn gọn.]
 
 Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
