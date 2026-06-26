@@ -93,6 +93,14 @@ File này ghi công thức quan trọng cần nhớ khi ôn thi.
 - Động năng: $K = \frac{1}{2}mv^2$.
 - Thế năng gần mặt đất: $U = mgh$.
 - Với lực thế: $A = -\Delta U$.
+- Bảo toàn cơ năng khi chỉ có lực thế sinh công:
+  $$K_1+U_1=K_2+U_2.$$
+- Khi có lực không thế như ma sát, lực cản, lực kéo ngoài:
+  $$K_1+U_1+A_{\text{không thế}}=K_2+U_2.$$
+- Ma sát trượt trên đoạn thẳng:
+  $$f_k=\mu_kN,\qquad A_{ms}=-f_ks.$$
+- Với ném xiên, độ cao cực đại chỉ phụ thuộc phần vận tốc thẳng đứng:
+  $$\frac{1}{2}mv_{0y}^2=mgh_{\max},\qquad v_{0y}=v_0\sin\theta.$$
 
 ## Động lượng, xung lượng và va chạm
 

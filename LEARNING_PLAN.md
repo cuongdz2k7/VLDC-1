@@ -17,7 +17,7 @@
 
 - `[~]` Newton + phân tích lực.
 - `[~]` Chuyển động tròn.
-- `[ ]` Công - động năng - thế năng.
+- `[x]` Công - động năng - thế năng.
 - `[ ]` Động lượng - xung lượng - va chạm.
 - `[ ]` Vật rắn quay: mômen lực, mômen quán tính, năng lượng quay.
 
@@ -71,10 +71,11 @@
 
 ### Buổi 2: Công - năng lượng
 
-- Ôn công của lực không đổi và lực thay đổi.
-- Ôn định lý động năng.
-- Ôn thế năng hấp dẫn và lực thế.
-- Luyện bài dùng năng lượng để tìm vận tốc, độ cao, công.
+- `[x]` Ôn công của lực không đổi và lực thay đổi.
+- `[x]` Ôn định lý động năng.
+- `[x]` Ôn thế năng hấp dẫn và lực thế.
+- `[x]` Luyện bài dùng năng lượng để tìm vận tốc, độ cao, công.
+- `[~]` Cần luyện thêm bài năng lượng kết hợp chuyển động tròn như vòng lượn/mất tiếp xúc nếu còn thời gian.
 
 ### Buổi 3: Động lượng - va chạm
 

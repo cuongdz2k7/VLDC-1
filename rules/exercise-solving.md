@@ -36,7 +36,15 @@ Dùng khi bài thuộc động lực học hoặc người học yêu cầu vẽ
 - Tạo SVG bằng generator/template trong `figures/` nếu `Update` cho phép tạo hoặc cập nhật file.
 - Sau khi tạo, nhúng hình hoặc link file SVG vào câu trả lời.
 - Nếu `Update` không cho phép tạo file, không tự tạo file; hãy báo cần bật `Update` hoặc chuyển sang FBD nháp.
-- Ưu tiên dùng file cấu hình và generator có sẵn, không viết SVG tay dài nếu có thể tránh.
+- Mặc định ưu tiên phong cách sketch gọn như vở nháp: ít trang trí, nhìn nhanh, gần với hình đề hoặc cách vẽ trên giấy.
+- Không lạm dụng khung panel, màu sắc hoặc bố cục quá nặng nếu bài chỉ cần hiểu lực, chiều chuyển động và dấu công.
+- Ưu tiên một hình tổng thể nếu vẫn rõ; chỉ tách vật riêng khi cần tránh trộn lực của các hệ khác nhau.
+- Phải ghi chiều chuyển động hoặc chuyển dời ngay trên hình nếu bài cần xét dấu.
+- Nếu phù hợp, ghi rõ quy ước `chọn chiều dương = chiều chuyển động` trên hình hoặc ngay trước hình.
+- Với bài công - động năng, FBD phải đủ để nhìn ra lực nào sinh công dương, lực nào sinh công âm, lực nào có công bằng 0.
+- Với bài tốc độ không đổi, có thể ghi $a=0$ hoặc $\Delta K=0$ trên hình nếu giúp hiểu bài.
+- Chỉ dùng kiểu FBD trình bày nhiều khung/panel khi người học yêu cầu hình sạch để lưu lâu dài hoặc bài quá phức tạp.
+- Ưu tiên dùng file cấu hình và generator có sẵn, không viết SVG tay dài nếu có thể tránh; nếu chưa có generator phù hợp, có thể tạo SVG sketch gọn trong `figures/generated/`.
 - Nếu chưa có generator phù hợp, có thể tạo generator nhỏ theo dạng bài, nhưng phải giữ cấu trúc dễ mở rộng.
 
 ### Nội dung FBD bắt buộc
@@ -44,6 +52,7 @@ Dùng khi bài thuộc động lực học hoặc người học yêu cầu vẽ
 - Vật hoặc hệ vật đang xét.
 - Các lực tác dụng lên vật/hệ.
 - Trục tọa độ hoặc chiều dương nếu bài cần chiếu lực.
+- Chiều chuyển động hoặc chuyển dời nếu bài cần xét dấu công, dấu gia tốc hoặc hướng lực.
 - Hướng gia tốc nếu cần để tránh nhầm dấu.
 - Không trộn lực của các hệ khác nhau vào cùng một FBD.
 

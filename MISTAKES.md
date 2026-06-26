@@ -47,6 +47,30 @@ File này ghi các lỗi sai cần tránh khi học và làm đề.
 - Cách sửa: Với xe rẽ trên đường ngang, viết $f_s=m v^2/R$ nếu xe rẽ đều và không trượt; kiểm tra điều kiện $m v^2/R\le \mu_sN$ nếu đề hỏi giới hạn trượt.
 - Dấu hiệu để lần sau tránh lỗi: Nếu không có ma sát ngang đủ lớn, xe không ôm cua được dù đã bẻ lái.
 
+## 2026-06-26 - Công, động năng và thế năng
+
+- Bài thuộc chương: Công - động năng - thế năng, bài cơ năng có ma sát/lực cản.
+- Lỗi sai: Dùng bảo toàn cơ năng $K_1+U_1=K_2+U_2$ khi có ma sát, lực cản hoặc lực cơ bắp sinh công.
+- Vì sao sai: Cơ năng chỉ bảo toàn khi chỉ có lực thế sinh công. Ma sát, lực cản và lực cơ bắp là lực không thế, có thể làm cơ năng tăng hoặc giảm.
+- Cách sửa: Nếu thấy ma sát, lực cản, lực kéo ngoài, người leo thang hoặc vật bị dừng bởi lực cản, dùng:
+  $$K_1+U_1+A_{\text{không thế}}=K_2+U_2.$$
+- Dấu hiệu để lần sau tránh lỗi: Nếu đề cho công ma sát, hệ số ma sát, lực cản trung bình hoặc vật dừng lại do lực cản, không dùng bảo toàn cơ năng đơn thuần.
+
+- Lỗi sai: Nhầm dấu của $g$ trong thế năng $U=mgh$.
+- Vì sao sai: Trong $U=mgh$, $g$ là độ lớn dương của gia tốc trọng trường; dấu nằm ở $\Delta h$, $\Delta U$ hoặc công $A_g=-\Delta U_g$.
+- Cách sửa: Chọn mốc thế năng, tính $h$ là độ cao so với mốc. Khi vật đi xuống, $h$ giảm nên $\Delta U<0$ và trọng lực sinh công dương.
+- Dấu hiệu để lần sau tránh lỗi: Nếu đang viết thế năng mà định thay $g=-9{,}80$, dừng lại hỏi mình đang dùng thế năng hay phương trình động học theo trục tọa độ.
+
+- Lỗi sai: Tưởng thế năng không thể âm hoặc giá trị tuyệt đối của thế năng luôn có ý nghĩa cố định.
+- Vì sao sai: Thế năng phụ thuộc mốc chọn; vị trí thấp hơn mốc có thể có $U<0$. Đại lượng có ý nghĩa trực tiếp là $\Delta U$.
+- Cách sửa: Luôn ghi mốc thế năng trước, rồi dùng hiệu $U_2-U_1$ khi xét công hoặc năng lượng.
+- Dấu hiệu để lần sau tránh lỗi: Nếu đổi mốc thế năng mà đáp án vật lí đổi, nghĩa là đang dùng sai giá trị $U$ tuyệt đối thay vì dùng $\Delta U$.
+
+- Lỗi sai: Với ném xiên, dùng toàn bộ $v_0$ để tính độ cao cực đại như $\frac{1}{2}mv_0^2=mgh$.
+- Vì sao sai: Ở đỉnh quỹ đạo ném xiên, chỉ có $v_y=0$; vận tốc ngang $v_x$ vẫn còn nên động năng ngang không chuyển thành thế năng.
+- Cách sửa: Tách $v_{0y}=v_0\sin\theta$, rồi dùng $\frac{1}{2}mv_{0y}^2=mgh_{\max}$.
+- Dấu hiệu để lần sau tránh lỗi: Nếu đề ném xiên hỏi độ cao cực đại, phải tách vận tốc trước khi dùng năng lượng.
+
 ## 2026-06-25 - Tuần 1 động học
 
 - Bài thuộc chương: Động học, chuyển động nhiều giai đoạn và ném xiên.
