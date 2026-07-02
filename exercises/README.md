@@ -22,6 +22,18 @@ Không dùng `EXAM_PATTERNS.md` để lưu từng bài cụ thể. `EXAM_PATTERN
 - Khi cần bỏ qua bài ít khả năng ra thi.
 - Khi cần rút công thức, cách nghĩ, cách trình bày và lỗi sai từ một nhóm bài tập.
 
+## Chỉ mục file priority hiện có
+
+| File | Cụm kiến thức | Dùng khi hỏi bài dạng nào |
+| --- | --- | --- |
+| `tuan-1-dong-hoc-priority.md` | Động học nền | Chuyển động thẳng, nhiều giai đoạn, ném xiên, chuyển động tương đối |
+| `chuong-2-dong-luc-hoc-priority.md` | Động lực học Newton | Phân tích lực, hệ vật, mặt phẳng nghiêng, lực căng dây, ma sát |
+| `tuan3-cong-va-nang-luong-priority.md` | Công - năng lượng | Công, động năng, thế năng, bảo toàn cơ năng, lực không thế |
+| `vat-ran-quay-priority.md` | Vật rắn quay | Động học quay, mômen quán tính, năng lượng quay, ròng rọc có mômen quán tính |
+| `tuan-6-dong-luc-cua-chuyen-dong-quay-priority.md` | Động lực của chuyển động quay | Mômen lực, bánh đà/đĩa quay, lăn không trượt, công suất quay, mômen động lượng |
+
+Khi người học hỏi bài tập, AI phải ưu tiên tìm file priority liên quan để nhận diện dạng bài, công thức bật ra và cách tư duy giải. Nếu bài không khớp file nào, nói rõ chưa thấy priority phù hợp rồi dùng `EXAM_PATTERNS.md` và `FORMULAS.md`.
+
 ## Cấu trúc chuẩn cho `exercises/[ten-chuong]-priority.md`
 
 ```md

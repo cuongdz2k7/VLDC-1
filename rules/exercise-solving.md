@@ -108,10 +108,17 @@ Khi trả lời trong chat, viết mẫu trình bày trực tiếp như trên, k
 
 ## Bước 1: Phân loại bài toán
 
-- Trước khi phân loại, phải xác định chương hoặc cụm kiến thức gần nhất của bài.
-- Nếu có file `exercises/*-priority.md` liên quan đến chương hoặc cụm kiến thức đó, phải đọc file này trước khi phân loại bài.
-- Khi đọc priority, ưu tiên mục nhận diện dạng bài, công thức bật ra, cách tư duy và bẫy nhận dạng sai nếu có.
-- Nếu không tìm thấy file priority phù hợp, nói rõ `Chưa thấy file priority phù hợp` và phân loại bằng `EXAM_PATTERNS.md`, `FORMULAS.md` và context đề thi.
+### Tra cứu context liên quan trước khi phân loại
+
+- Trước khi phân loại, phải xác định 1-3 chương hoặc cụm kiến thức ứng viên của bài.
+- Tìm file `exercises/*-priority.md` liên quan trong `exercises/`. Nếu có, phải đọc file này trước khi phân loại bài.
+- Khi đọc priority, ưu tiên mục nhận diện dạng bài, công thức bật ra, cách tư duy, bài đại diện và bẫy nhận dạng sai.
+- Tìm file topic liên quan trong `topics/` nếu cần giải thích lại bản chất, điều kiện áp dụng hoặc công thức nền.
+- Nếu không tìm thấy priority phù hợp, nói rõ `Chưa thấy file priority phù hợp` và phân loại bằng `EXAM_PATTERNS.md`, `FORMULAS.md`, `EXAM_ANALYSIS.md` và context đề thi.
+- Nếu có nhiều file có vẻ liên quan, chọn file sát nhất với dấu hiệu đề; nếu cần, ghi ngắn gọn vì sao chọn file đó.
+
+### Nội dung phân loại bắt buộc
+
 - Xác định chủ đề.
 - Xác định dạng bài.
 - Xác định mức độ: dễ, trung bình, khó.
@@ -119,6 +126,7 @@ Khi trả lời trong chat, viết mẫu trình bày trực tiếp như trên, k
 - Nếu bài giống pattern trong `EXAM_PATTERNS.md`, chỉ ra pattern tương ứng.
 - Chỉ ra dấu hiệu trong đề làm bài thuộc dạng đó.
 - Chỉ ra công thức hoặc công cụ có khả năng dùng, nhưng chưa giải hoặc thay số.
+- Chỉ ra liên hệ với file priority/topic nếu có, ví dụ: bài này cùng dạng với mục nào, dùng công thức nào trong file đó, cần nhớ bẫy nào.
 
 Format ngắn gọn nên có:
 
@@ -126,6 +134,8 @@ Format ngắn gọn nên có:
 - Dạng bài.
 - Dấu hiệu nhận diện trong đề.
 - Công thức/công cụ có khả năng dùng.
+- File liên quan đã dùng: priority/topic/pattern nếu có.
+- Cách liên hệ: bài này đang kiểm tra ý tưởng nào đã học.
 
 Sau đó hỏi đúng ý:
 

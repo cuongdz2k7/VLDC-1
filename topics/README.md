@@ -24,6 +24,17 @@ Không dùng `topics/` để lưu danh sách từng bài tập cụ thể. Danh 
 - Sau khi phát hiện một quy trình giải hoặc lỗi sai quan trọng cần nhớ lâu dài.
 - Khi người học inject file `exercises/[ten-chuong]-priority.md` và muốn cô đọng thành topic.
 
+## Chỉ mục file topic hiện có
+
+| File | Cụm kiến thức | Dùng khi hỏi lý thuyết về |
+| --- | --- | --- |
+| `tuan-1-dong-hoc.md` | Động học nền | Chuyển động thẳng, ném xiên, cách lập phương trình theo trục |
+| `dong-luc-hoc.md` | Động lực học Newton | Định luật II Newton, phân tích lực, hệ vật, mặt phẳng nghiêng |
+| `cong-nang-luong.md` | Công - năng lượng | Công, động năng, thế năng, bảo toàn cơ năng, lực không thế |
+| `vat-ran-quay.md` | Vật rắn quay | Động học quay, mômen quán tính, động lực học quay, năng lượng quay |
+
+Topic dùng để giải thích bản chất và ôn nhanh. Khi cần giải bài cụ thể, phải đọc thêm file priority tương ứng trong `exercises/` nếu có.
+
 ## Cấu trúc chuẩn cho `topics/[ten-chuong].md`
 
 ```md

@@ -4,6 +4,14 @@ Dùng khi người học hỏi về khái niệm, công thức, bản chất, đ
 
 ## Cách trả lời mặc định
 
+### 0. Tra cứu topic/priority liên quan nếu có
+
+- Trước khi giải thích, xác định chương hoặc cụm kiến thức của câu hỏi.
+- Nếu có file topic liên quan trong `topics/`, đọc topic để lấy bản chất, công thức trọng tâm, điều kiện áp dụng và lỗi dễ nhầm.
+- Nếu có file `exercises/*-priority.md` liên quan, đọc file đó khi người học muốn biết công thức/khái niệm dùng trong bài tập hoặc đề thi như thế nào.
+- Nếu không tìm thấy topic/priority phù hợp, dùng `FORMULAS.md`, `EXAM_PATTERNS.md`, `EXAM_ANALYSIS.md` và nói rõ nguồn đã dùng.
+- Khi trả lời, nếu phù hợp, phải nói ngắn gọn: khái niệm này hay xuất hiện trong dạng bài nào, dấu hiệu nhận diện trong đề là gì, công thức nào thường bật ra.
+
 ### 1. Giải thích bản chất trước
 
 - Khái niệm này mô tả điều gì?
@@ -51,6 +59,14 @@ Mô tả hiện tượng vật lí thực sự diễn ra. Chỉ dùng ví dụ h
 ### 8. Kiểm tra hiểu biết
 
 Đặt một câu hỏi ngắn kiểu "vì sao" hoặc "điều gì xảy ra nếu".
+
+### 9. Liên hệ với bài tập và đề thi nếu có context
+
+- Nếu câu hỏi thuộc chương đã có priority/topic, kết thúc bằng một liên hệ ngắn:
+  - Công thức/khái niệm này dùng trong dạng bài nào.
+  - Nhìn đề thấy dấu hiệu gì thì cần nhớ đến nó.
+  - Bẫy nào dễ làm sai khi dùng nó.
+- Không biến câu trả lời lý thuyết thành lời giải bài tập nếu người học chưa hỏi bài cụ thể.
 
 ## Chế độ giải thích đoạn lý thuyết
 

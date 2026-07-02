@@ -148,6 +148,8 @@ Tôi gửi ảnh hoặc nội dung bài số [số bài nếu có].
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
+Trước khi giải, hãy tự xác định chương/dạng bài và đọc file `exercises/*-priority.md` hoặc `topics/*` liên quan nếu có.
+Hãy chỉ ra dấu hiệu nhận diện dạng bài, công thức có khả năng dùng và hỏi tôi có nhận ra dạng bài không.
 [Nếu muốn: Viết lời giải hoàn chỉnh, thực dụng, đủ điểm, không dài dòng.]
 [Nếu muốn vẽ lực: FBD: không vẽ / nháp / đẹp.]
 
@@ -173,6 +175,7 @@ Nếu có đoạn lý thuyết/công thức/mục lục cần giải thích:
 
 Custom:
 Mặc định làm theo `AGENTS.md`.
+Nếu có file `topics/` hoặc `exercises/*-priority.md` liên quan, hãy dùng để liên hệ khái niệm với dạng bài và công thức cần dùng.
 [Nếu muốn: Giải thích từng phần, tôi xác nhận rồi mới chuyển tiếp.]
 [Nếu muốn: Giải thích chi tiết hoàn chỉnh.]
 [Nếu muốn: Giải thích ngắn gọn.]
@@ -273,7 +276,33 @@ Update:
 Cập nhật `practice/EXAM_ANALYSIS.md` và `practice/EXAM_PATTERNS.md` nếu có thông tin mới đáng lưu.
 ```
 
-## 11. Tạo bài tập sát đề
+## 11. Bắt đầu làm một đề hoặc chấm bài làm
+
+Prompt này dùng khi tôi gửi đề để bắt đầu làm, hoặc gửi bài làm để bạn chấm như giảng viên Vật lí. Mặc định không giải hết đề ngay.
+
+```md
+Tuân thủ `practice/AGENTS.md`.
+
+Context:
+Tôi đang làm một đề PHY1095 hoặc đề mô phỏng.
+
+Goal:
+Tôi muốn bạn phân loại đề/bài làm, cho biết từng câu thuộc chương nào, dạng nào, công thức nào cần dùng và tôi đang thiếu gì.
+
+Input:
+Tôi gửi ảnh đề hoặc bài làm của tôi.
+
+Custom:
+Mặc định làm theo `AGENTS.md`.
+Nếu chỉ có đề: chưa giải chi tiết, hãy lập bảng câu → chương → dạng → công thức → topic/priority liên quan → bẫy dễ sai.
+Nếu có bài làm của tôi: đóng vai giảng viên Vật lí để chấm từng câu, chỉ ra phần đúng, phần thiếu, lỗi mất điểm và cách sửa.
+Nếu tôi hỏi "nên cải thiện gì", hãy đọc `topics/` và `exercises/*-priority.md` liên quan để đề xuất dạng cần luyện và bài nên làm lại.
+
+Update:
+Không cập nhật file nếu tôi chưa yêu cầu.
+```
+
+## 12. Tạo bài tập sát đề
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -294,7 +323,7 @@ Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
 ```
 
-## 12. Tạo đề mô phỏng 90 phút
+## 13. Tạo đề mô phỏng 90 phút
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -318,7 +347,7 @@ Update:
 Không cập nhật file.
 ```
 
-## 13. Chấm đề mô phỏng
+## 14. Chấm đề mô phỏng
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -342,7 +371,7 @@ Update:
 Cập nhật `practice/MISTAKES.md` nếu lỗi quan trọng.
 ```
 
-## 14. Dùng tài liệu PDF thầy gửi
+## 15. Dùng tài liệu PDF thầy gửi
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -363,7 +392,7 @@ Update:
 Cập nhật `practice/FORMULAS.md`, `practice/EXAM_PATTERNS.md`, `practice/LEARNING_PLAN.md` nếu cần.
 ```
 
-## 15. Ôn gấp trước kỳ thi
+## 16. Ôn gấp trước kỳ thi
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -384,7 +413,7 @@ Update:
 Không cập nhật file nếu tôi chưa yêu cầu.
 ```
 
-## 16. Tổng kết sau buổi học
+## 17. Tổng kết sau buổi học
 
 Prompt này dùng để tổng kết một buổi học cụ thể. Không tạo topic chương trừ khi tôi nói rõ đã kết thúc chương hoặc yêu cầu cập nhật `topics/[ten-chuong].md`.
 
@@ -407,7 +436,7 @@ Update:
 Cập nhật `practice/MISTAKES.md`, `practice/FORMULAS.md`, `practice/QUESTIONS.md`, `practice/LEARNING_PLAN.md` nếu cần.
 ```
 
-## 17. Prompt ngắn dùng hằng ngày
+## 18. Prompt ngắn dùng hằng ngày
 
 ```md
 Tuân thủ `practice/AGENTS.md`.
@@ -429,7 +458,7 @@ Update:
 [Không cập nhật file / cập nhật file nào nếu cần.]
 ```
 
-## 18. Cập nhật rule hoặc cấu trúc project
+## 19. Cập nhật rule hoặc cấu trúc project
 
 Dùng khi muốn AI đề xuất sửa rule, template, README hoặc tổ chức lại cấu trúc project. Prompt này không dùng để sửa nội dung học tập như công thức, lỗi sai hoặc câu hỏi cá nhân.
 

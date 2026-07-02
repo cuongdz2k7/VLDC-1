@@ -94,6 +94,17 @@ Khi làm việc trong project này, hãy đọc và ưu tiên context theo thứ
 
 Nếu có PDF hoặc tài liệu thầy gửi, hãy ưu tiên công thức, ký hiệu và kỹ thuật giải trong tài liệu đó. Nếu tài liệu mâu thuẫn với cách nhớ chung, hãy báo rõ điểm khác biệt.
 
+## Quy tắc tra cứu context khi hỏi bài, lý thuyết hoặc làm đề
+
+- Khi người học hỏi một bài tập, AI phải đọc `rules/exercise-solving.md`, xác định chương/cụm kiến thức gần nhất, rồi tìm file liên quan trong `exercises/` và `topics/` nếu có.
+- Với bài tập, ưu tiên đọc file `exercises/*-priority.md` trước vì đây là bản đồ nhận diện dạng bài, công thức bật ra và cách tư duy thực hành.
+- Sau priority, đọc topic liên quan trong `topics/` nếu cần nhắc lại bản chất, điều kiện áp dụng hoặc công thức nền.
+- Nếu không tìm được priority/topic phù hợp, phải nói rõ và dùng `EXAM_PATTERNS.md`, `FORMULAS.md`, `EXAM_ANALYSIS.md` để phân loại.
+- Khi người học hỏi lý thuyết, AI phải đọc `rules/theory-question.md`; nếu có topic/priority liên quan thì dùng chúng để liên hệ khái niệm với dạng bài, công thức cần dùng và dấu hiệu nhận diện trong đề.
+- Khi người học bắt đầu làm một đề, gửi đề trắng hoặc gửi bài làm để chấm, AI phải đọc `rules/exam-practice.md`; trước khi giải sâu phải phân loại từng câu theo chương, dạng, công thức và file topic/priority cần ôn nếu có.
+- Khi người học hỏi "tôi nên làm gì để cải thiện", AI phải đọc topic/priority liên quan để đề xuất phần cần ôn, dạng bài cần luyện và công thức cần củng cố.
+- Trong mọi trường hợp, không đọc topic/priority chỉ để liệt kê cho đủ; chỉ liệt kê trong `Context đã dùng` những file thật sự dùng để phân loại, giải thích hoặc hướng dẫn.
+
 ## Báo cáo context đã dùng
 
 - Trong mọi câu trả lời, AI phải ghi mục `Context đã dùng` ở cuối.
@@ -133,7 +144,7 @@ Sau khi đọc prompt, AI phải tự chọn và đọc file rule tương ứng 
 | Tổng hợp kiến thức thực hành theo bài tập | gửi danh sách/ảnh bài tập trọng tâm, muốn lọc bài, chọn bài, tạo file `exercises/*-priority.md` | `rules/exercise-practice-summary.md` và `exercises/README.md` |
 | Tổng kết chương | đã học xong chương, muốn đúc kết để ôn thi nhanh, cập nhật `topics/` | `rules/chapter-summary.md` và `topics/README.md` |
 | Phân tích đề thi mới | gửi đề thi, muốn phân loại câu, rút pattern, cập nhật phân tích đề | `rules/exam-analysis.md` |
-| Tạo/chấm bài sát đề hoặc đề mô phỏng | tạo bài sát đề, tạo đề 90 phút, chấm đề mô phỏng | `rules/exam-practice.md` |
+| Tạo/chấm bài sát đề hoặc đề mô phỏng | tạo bài sát đề, tạo đề 90 phút, bắt đầu làm đề, phân loại đề, chấm đề mô phỏng | `rules/exam-practice.md` |
 | Tổng kết sau buổi học | muốn ghi lại buổi học, lỗi, công thức, việc cần ôn tiếp | `rules/session-summary.md` và `SESSION_TEMPLATE.md` |
 | Cập nhật rule/cấu trúc project | muốn sửa quy ước, template, README, tổ chức project | `rules/project-update.md` |
 
