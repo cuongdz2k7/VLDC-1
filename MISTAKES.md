@@ -117,6 +117,38 @@ File này ghi các lỗi sai cần tránh khi học và làm đề.
 - Cách sửa: Nếu đề hỏi năng lượng và bỏ qua ma sát, viết $mgh=K_{\text{vật}}+K_{\text{trống}}$. Nếu dùng động lực học, phải viết $mg-T=ma$, $TR=I\alpha$, $a=\alpha R$.
 - Dấu hiệu để lần sau tránh lỗi: Nếu vật rơi có dây nối với ròng rọc/trống có mômen quán tính, không dùng ngay $v^2=2gh$.
 
+## 2026-07-02 - Động lượng, xung lượng và mômen động lượng
+
+- Bài thuộc chương: Động lượng - xung lượng và liên hệ với động lực học quay.
+- Lỗi sai: Hiểu "động lượng lớn thì khó dừng" còn mơ hồ, chưa nối được với lực hãm và thời gian hãm.
+- Vì sao sai: Muốn dừng vật thì phải làm động lượng từ $\vec p=m\vec v$ về $0$, nên cần một xung lượng hãm có độ lớn bằng độ biến thiên động lượng. Vật có động lượng lớn hơn cần lực hãm lớn hơn, thời gian hãm lâu hơn, hoặc cả hai:
+  $$\vec J=\vec F_{tb}\Delta t=\Delta\vec p.$$
+- Cách sửa: Khi nghe "khó dừng", hiểu cụ thể là cùng một lực hãm thì thời gian dừng dài hơn; cùng một thời gian hãm thì lực cần lớn hơn.
+- Dấu hiệu để lần sau tránh lỗi: Nếu đề hỏi dừng vật, va chạm hoặc lực trung bình trong thời gian ngắn, phải nghĩ đến $\vec J=\Delta\vec p$.
+
+- Lỗi sai: Tưởng cứ có một lực tác dụng trong thời gian dài thì động lượng của vật chắc chắn đổi.
+- Vì sao sai: Độ biến thiên động lượng bằng xung lượng của hợp lực, không phải xung lượng của một lực riêng lẻ nếu còn lực khác triệt tiêu. Ví dụ đẩy ô tô không nhúc nhích: lực đẩy bị ma sát nghỉ cân bằng, nên $\sum F=0$ và $\Delta p=0$ dù lực đẩy riêng lẻ tồn tại.
+- Cách sửa: Khi dùng xung lượng để tìm $\Delta p$, viết:
+  $$\Delta\vec p=\int \sum\vec F\,dt.$$
+  Chỉ dùng $\vec J=\vec F\Delta t$ cho một lực riêng nếu lực đó là hợp lực hoặc bài đang hỏi xung lượng của riêng lực đó.
+- Dấu hiệu để lần sau tránh lỗi: Nếu vật đứng yên hoặc chuyển động đều, kiểm tra các lực khác như ma sát nghỉ, lực pháp tuyến, lực căng dây trước khi kết luận động lượng đổi.
+
+- Lỗi sai: Nhầm xung lượng với công vì cả hai đều liên quan đến lực.
+- Vì sao sai: Xung lượng là lực tích lũy theo thời gian và làm đổi động lượng; công là lực tích lũy theo chuyển dời và làm đổi động năng:
+  $$\vec J=\int \vec F\,dt=\Delta\vec p,$$
+  $$A=\int \vec F\cdot d\vec s=\Delta K.$$
+- Cách sửa: Hỏi đề đang xét "lực tác dụng bao lâu" hay "lực tác dụng trên quãng đường nào". Nếu theo thời gian, nghĩ đến xung lượng; nếu theo chuyển dời, nghĩ đến công.
+- Dấu hiệu để lần sau tránh lỗi: Nếu vật không chuyển dời thì công có thể bằng 0 dù có lực tác dụng lâu; nhưng xung lượng của riêng lực đó vẫn có thể khác 0. Muốn biết động lượng có đổi không phải xét hợp lực.
+
+- Lỗi sai: Tưởng mômen động lượng là một đại lượng "theo thời gian" giống xung lượng.
+- Vì sao sai: Mômen động lượng $\vec L=\vec r\times\vec p$ là đại lượng trạng thái tại một thời điểm, giống như động lượng $\vec p=m\vec v$. Mômen lực mới là tốc độ biến thiên của mômen động lượng:
+  $$\sum\vec M=\frac{d\vec L}{dt}.$$
+- Cách sửa: Nhớ cặp tương ứng:
+  $$\sum\vec F=\frac{d\vec p}{dt},\qquad \sum\vec M=\frac{d\vec L}{dt}.$$
+  Nếu tích phân theo thời gian thì được xung lượng hoặc xung lượng góc:
+  $$\int\sum\vec F\,dt=\Delta\vec p,\qquad \int\sum\vec M\,dt=\Delta\vec L.$$
+- Dấu hiệu để lần sau tránh lỗi: Nếu thấy $d/dt$, đó là tốc độ biến thiên theo thời gian; nếu thấy tích phân theo $dt$, đó là tác dụng tích lũy theo thời gian.
+
 ## Lỗi về mặt phẳng nghiêng
 
 - Nhầm $mg\sin\alpha$ và $mg\cos\alpha$.

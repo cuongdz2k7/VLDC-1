@@ -335,3 +335,169 @@ Xuất hiện ở cả đề số 01 và đề số 02. Đây là dạng rất t
 - Tính $\Delta T$ trong giai đoạn chuyển pha.
 - Quên nhiệt độ không đổi trong quá trình chuyển pha.
 - Nhầm dẫn nhiệt, đối lưu và bức xạ.
+
+## Dạng 14: Bánh đà hoặc đĩa quay chậm dần do mômen hãm
+
+### Tần suất
+
+Xuất hiện lặp lại trong hai biến thể đề priority cao gửi ngày 2026-07-02. Đây là dạng rất trọng tâm nếu đề thật bám theo nguồn này.
+
+### Dấu hiệu nhận biết
+
+- Đề cho bánh đà, đĩa đặc hoặc vật rắn quay quanh trục cố định.
+- Đề cho $m$, $R$, công thức mômen quán tính như $I=\frac12mR^2$.
+- Đề có bảng vận tốc góc $\omega$ theo thời gian $t$.
+- Đề hỏi nhận xét quan hệ $\omega-t$, tính gia tốc góc, mômen lực hãm hoặc so sánh mômen hãm thực nghiệm với lý thuyết.
+- Đề có lực hãm tiếp tuyến tác dụng lên vành bánh đà.
+
+### Công thức bật ra
+
+- Gia tốc góc trung bình: $\alpha_{tb}=\frac{\Delta\omega}{\Delta t}$.
+- Phương trình động lực học quay: $\sum M=I\alpha$.
+- Mômen lực tiếp tuyến: $M=FR$.
+- Đĩa đặc: $I=\frac12mR^2$.
+
+### Cách tư duy
+
+1. Nhìn bảng $\omega-t$ để xác định $\omega$ giảm gần tuyến tính hay không.
+2. Nếu $\omega$ giảm đều theo thời gian, xem chuyển động là quay chậm dần gần đều.
+3. Tính $\alpha$ từ độ dốc bảng, chú ý dấu âm nếu chọn chiều quay ban đầu là dương.
+4. Tính mômen hãm thực nghiệm bằng $M=I\alpha$.
+5. Nếu đề cho lực hãm tiếp tuyến, tính mômen hãm lý thuyết bằng $M=FR$ rồi so sánh độ lớn.
+
+### Lỗi sai thường gặp
+
+- Quên dấu âm của $\alpha$ trong quay chậm dần.
+- Dùng $F$ thay cho $FR$ khi tính mômen lực.
+- Nhầm mômen hãm thực nghiệm từ $I\alpha$ với mômen hãm lý thuyết từ $FR$.
+- So sánh sai vì không nói rõ đang so sánh độ lớn mômen hãm.
+- Không nêu nguyên nhân sai khác như ma sát trục, lực hãm không hoàn toàn không đổi, sai số đo thời gian/vận tốc góc.
+
+## Dạng 15: Mômen động lượng và bảo toàn mômen động lượng
+
+### Tần suất
+
+Xuất hiện trong đề priority cao ở câu lý thuyết cơ về vận động viên nhảy cầu thu người. Đây là dạng rất đáng ưu tiên cho phần lý thuyết cơ 2 điểm.
+
+### Dấu hiệu nhận biết
+
+- Đề có vật hoặc người quay trong không gian.
+- Đề nói thay đổi tư thế, thu người, duỗi người hoặc thay đổi phân bố khối lượng.
+- Đề hỏi tốc độ quay tăng hay giảm, hoặc hỏi vì sao mômen quán tính thay đổi.
+- Mômen lực ngoài quanh trục quay có thể bỏ qua hoặc không đáng kể.
+
+### Công thức bật ra
+
+- Mômen động lượng vật rắn quanh trục cố định: $L=I\omega$.
+- Bảo toàn mômen động lượng: $I_1\omega_1=I_2\omega_2$ nếu $\sum M_{ngoài}\approx0$.
+
+### Cách tư duy
+
+1. Xác định trục quay và xem mômen lực ngoài quanh trục đó có đáng kể không.
+2. Xét tư thế làm mômen quán tính tăng hay giảm.
+3. Nếu $L$ bảo toàn, $I$ giảm thì $\omega$ tăng; $I$ tăng thì $\omega$ giảm.
+4. Trả lời bằng quan hệ giữa phân bố khối lượng, mômen quán tính và tốc độ góc.
+
+### Lỗi sai thường gặp
+
+- Nói vận động viên tự tạo thêm mômen lực ngoài để quay nhanh hơn.
+- Nhầm thu người làm $I$ tăng.
+- Quên điều kiện bảo toàn mômen động lượng.
+- Chỉ nói "quay nhanh hơn" mà không nêu quan hệ $I\omega=const$.
+
+## Dạng 16: Xung lượng và công - năng lượng trong va chạm ngắn hạn
+
+### Tần suất
+
+Xuất hiện trong đề priority cao ở câu lý thuyết cơ về búa đóng đinh. Đây là dạng lý thuyết cơ rất đáng ưu tiên nếu đề thật theo biến thể này.
+
+### Dấu hiệu nhận biết
+
+- Đề có va chạm ngắn, búa đóng đinh, vật tác dụng lực lớn trong thời gian ngắn.
+- Đề hỏi vì sao vật nặng hơn hiệu quả hơn nếu cùng vận tốc.
+- Đề hỏi vì sao động năng không chuyển hoàn toàn thành công có ích.
+
+### Công thức bật ra
+
+- Động lượng: $\vec p=m\vec v$.
+- Xung lượng: $\vec J=\vec F_{tb}\Delta t=\Delta\vec p$.
+- Động năng: $K=\frac12mv^2$.
+- Định lý động năng: $A_{net}=\Delta K$.
+
+### Cách tư duy
+
+1. Nếu câu hỏi nói đến va chạm trong thời gian ngắn, nghĩ đến xung lượng và biến thiên động lượng.
+2. Nếu so hai vật cùng vận tốc, vật có $m$ lớn hơn có $p$ và $K$ lớn hơn.
+3. Dùng xung lượng để giải thích khả năng tạo lực trung bình lớn lên đinh trong thời gian va chạm.
+4. Dùng năng lượng để giải thích phần hao phí: nhiệt, âm thanh, biến dạng và dao động.
+
+### Lỗi sai thường gặp
+
+- Chỉ nói "búa nặng có lực lớn hơn" mà không gắn với $\Delta p$ hoặc xung lượng.
+- Nhầm xung lượng với công.
+- Tưởng toàn bộ động năng của búa biến thành công có ích đẩy đinh.
+- Quên va chạm thực tế có hao phí năng lượng cơ.
+
+## Dạng 17: Nén khí nhanh gần đoạn nhiệt bằng nguyên lý I
+
+### Tần suất
+
+Xuất hiện lặp lại trong hai biến thể đề priority cao ở phần nhiệt học lý thuyết 1 điểm.
+
+### Dấu hiệu nhận biết
+
+- Đề nói nén khí nhanh, piston bị ấn xuống nhanh, bơm xe nóng lên.
+- Đề nhấn mạnh khí chưa kịp trao đổi nhiệt với môi trường.
+- Đề yêu cầu vận dụng nguyên lý I nhiệt động lực học để giải thích nhiệt độ tăng.
+
+### Công thức bật ra
+
+- Nguyên lý I theo quy ước project: $Q=\Delta U+A$, với $A$ là công khí thực hiện.
+- Nén nhanh gần đoạn nhiệt: $Q\approx0$.
+- Với khí lí tưởng, nội năng tăng thì nhiệt độ tăng.
+
+### Cách tư duy
+
+1. Nhận ra quá trình nhanh nên xem gần đoạn nhiệt.
+2. Khi nén, ngoại lực làm công lên khí; theo quy ước công khí thực hiện, $A$ của khí thường âm.
+3. Từ $Q\approx0$, suy ra $\Delta U$ tăng khi khí bị nén.
+4. Nội năng khí lí tưởng tăng thì nhiệt độ tăng, nên ống bơm nóng lên.
+
+### Lỗi sai thường gặp
+
+- Chỉ giải thích bằng ma sát mà bỏ qua công nén khí.
+- Nhầm dấu công khí thực hiện và công ngoại lực thực hiện lên khí.
+- Quên điều kiện "nhanh" dẫn đến gần đoạn nhiệt.
+- Nói nhiệt độ tăng vì khí nhận nhiệt từ ngoài, trái với giả thiết chưa kịp trao đổi nhiệt.
+
+## Dạng 18: Khí lí tưởng đẳng tích và định luật Gay-Lussac từ bảng số liệu
+
+### Tần suất
+
+Xuất hiện lặp lại trong hai biến thể đề priority cao ở phần nhiệt học bài tập 3 điểm.
+
+### Dấu hiệu nhận biết
+
+- Đề nói lượng khí được khảo sát trong quá trình đẳng tích.
+- Đề cho bảng $T$ theo Kelvin và $P$ theo kPa hoặc Pa.
+- Đề yêu cầu vẽ đồ thị $P$ theo $T$, tính tỉ số $P/T$ hoặc đánh giá độ phù hợp với định luật Gay-Lussac.
+
+### Công thức bật ra
+
+- Phương trình khí lí tưởng: $pV=nRT$.
+- Đẳng tích, lượng khí không đổi: $\frac{P}{T}=const$.
+- Quan hệ đồ thị: $P$ tỉ lệ thuận với $T$.
+
+### Cách tư duy
+
+1. Vì $V,n$ không đổi, từ $pV=nRT$ suy ra $P/T$ phải gần không đổi.
+2. Đồ thị $P$ theo $T$ nên gần đường thẳng tăng đều.
+3. Tính $P/T$ ở trạng thái đầu và cuối hoặc nhiều trạng thái để kiểm tra độ ổn định.
+4. Nếu tỉ số gần bằng nhau, kết luận dữ liệu phù hợp với định luật Gay-Lussac trong sai số thực nghiệm.
+
+### Lỗi sai thường gặp
+
+- Dùng nhiệt độ Celsius thay vì Kelvin.
+- Nhầm đẳng tích với đẳng áp hoặc đẳng nhiệt.
+- Kết luận dữ liệu đúng tuyệt đối dù có sai số nhỏ.
+- Quên ghi đơn vị của $P/T$ nếu tính giá trị số.
